@@ -5,7 +5,8 @@
   "main": "src/js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "sass --watch src/sass:dist/css --style compressed"
+    "dev": "sass --watch src/sass:dist/css --style compressed",
+    "commit": "cz"
   },
   "keywords": [
     "foodzinho",
@@ -20,13 +21,32 @@
     "sass": "^1.50.0"
   },
   "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.13.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.8",
     "postcss": "^8.4.12",
     "prettier": "^2.6.2",
     "stylelint": "^14.7.0",
     "stylelint-config-sass-guidelines": "^9.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run husky:prepush",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.scss": "stylelint --fix"
   }
 }

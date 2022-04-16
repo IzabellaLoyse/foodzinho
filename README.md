@@ -43,6 +43,23 @@ Usando Yarn:
 yarn dev
 ```
 
+## 🛠️ Paronização de Commit
+
+- Padronização das mensagens de Commit
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+Usando npm:
+
+```
+npm commit
+```
+
+Usando Yarn:
+
+```
+yarn commit
+```
+
 ## ⚙️ Tenologias Utilizadas
 
 - HTML5
