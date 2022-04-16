@@ -1,4 +1,14 @@
+// @see https://www.nicchan.me/blog/tips-for-focus-styles/#consider-adding-a-little-bit-of-breathing-room
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline-offset: 0.25rem;
+  padding: 0;
+}
+
 body {
+  background-color: map-get($theme-light, 'background-color');
   line-height: 1.5;
 }
 
