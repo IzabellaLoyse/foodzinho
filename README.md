@@ -7,7 +7,8 @@ Trabalho de Conclusão de Curso dos alunos Izabella Loyse Pereira Cândido
 e Matheus Barbosa Ribeiro da Faculdade Presidente Antônio Carlos de Téofilo Otoni
 (UNIPAC).
 
-O Foodzinho utiliza o **[total11y](https://khan.github.io/tota11y/)** em suas dependências, no qual ajuda a visualizar o desempenho do site com tecnologias
+O Foodzinho utiliza o **[total11y](https://khan.github.io/tota11y/)** em suas
+dependências, no qual ajuda a visualizar o desempenho do site com tecnologias
 assistivas.
 
 # 💡 Guia de instalação
