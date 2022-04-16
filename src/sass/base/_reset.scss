@@ -7,11 +7,38 @@
   padding: 0;
 }
 
+// @see https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale/
 body {
   background-color: map-get($theme-light, 'background-color');
   line-height: 1.5;
 }
 
+// @see https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale/
+p,
+li,
+h1,
+h2,
+h3,
+h4 {
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
 label {
   cursor: pointer;
+}
+
+// @see https://www.zachleat.com/web/fluid-images/
+img {
+  max-width: 100%;
+}
+
+img[width][height] {
+  height: auto;
+}
+
+img[src$='.svg'] {
+  height: auto;
+  max-width: none;
+  width: 100%;
 }
