@@ -1,0 +1,8 @@
+// * Keyboard shortcuts
+[
+  {
+    // * Arrange CSS/SCSS rules alphabetically
+    "key": "f9",
+    "command": "editor.action.sortLinesAscending"
+  }
+]
