@@ -8,7 +8,7 @@
     "dev": "sass --watch src/sass:dist/css --style compressed"
   },
   "keywords": [],
-  "author": "Izabella Loyse Cândido and Matheus Ribeiro",
+  "author": "Izabella Loyse Cândido and Matheus Barbosa Ribeiro",
   "license": "ISC",
   "dependencies": {
     "@khanacademy/tota11y": "^0.2.0",
