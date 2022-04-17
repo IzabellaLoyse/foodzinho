@@ -36,7 +36,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run husky:prepush",
       "pre-commit": "lint-staged"
     }
   },
@@ -46,7 +45,11 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint --fix",
-    "*.scss": "stylelint --fix"
+    "*.js": [
+      "eslint 'src/**' --fix"
+    ],
+    "*.scss": [
+      "stylelint 'src/sass/**' --fix"
+    ]
   }
 }
