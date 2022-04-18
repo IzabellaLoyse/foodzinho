@@ -11,6 +11,8 @@
 body {
   background-color: map-get($theme-light, 'background-color');
   line-height: 1.5;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 // @see https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale/

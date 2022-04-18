@@ -46,10 +46,10 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint 'src/**' --fix"
+      "eslint './src/js/**' --fix"
     ],
     "*.scss": [
-      "stylelint 'src/sass/**' --fix"
+      "stylelint './src/sass/**' --fix"
     ]
   }
 }
