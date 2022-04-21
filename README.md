@@ -60,7 +60,7 @@ Usando Yarn:
 yarn commit
 ```
 
-## ⚙️ Tenologias Utilizadas
+## ⚙️ Tecnologias Utilizadas
 
 - HTML5
 - SCSS
