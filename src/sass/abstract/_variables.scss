@@ -1,8 +1,30 @@
-/* * Colors */
+/* ===================================================
+    * * Colors
+   =================================================== */
 
 $theme-light: (
-  'background-color': '#ffffff',
+  'main-color': #fff,
   'primary-color': '#000000',
   'secondary-color': '#252527',
   'third-color': '#a22e0b',
+  'fourth-color': '#f24e1e',
 );
+
+/* ===================================================
+    * *  Typography
+   =================================================== */
+
+$global-font-nunito: 'Nunito';
+$global-font-poppins: 'Poppins';
+
+$font-weight: (
+  'regular': 400,
+  'semi-bold': 600,
+  'bold': 700,
+  'extra-bold': 800,
+  'black': 900,
+);
+
+/* ===================================================
+    * *  Measures
+   =================================================== */

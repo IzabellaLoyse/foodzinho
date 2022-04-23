@@ -1,18 +1,23 @@
-// @see https://www.nicchan.me/blog/tips-for-focus-styles/#consider-adding-a-little-bit-of-breathing-room
-
-* {
+html {
   box-sizing: border-box;
-  margin: 0;
+}
+
+// @see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+// @see https://www.nicchan.me/blog/tips-for-focus-styles/#consider-adding-a-little-bit-of-breathing-room
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
   outline-offset: 0.25rem;
-  padding: 0;
 }
 
 // @see https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale/
 body {
-  background-color: map-get($theme-light, 'background-color');
-  line-height: 1.5;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: map-get($theme-light, 'main-color');
+  font-family: $global-font-nunito, sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
 }
 
 // @see https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale/
@@ -24,6 +29,12 @@ h3,
 h4 {
   hyphens: auto;
   overflow-wrap: break-word;
+}
+
+h1,
+h2 {
+  font-family: $global-font-poppins, sans-serif;
+  font-weight: map-get($font-weight, 'semi-bold');
 }
 
 label {

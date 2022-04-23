@@ -20,4 +20,5 @@
     "postcss",
     "scss"
   ],
+  "liveServer.settings.port": 5501,
 }

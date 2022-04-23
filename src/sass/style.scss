@@ -1,11 +1,14 @@
 @charset 'utf-8';
 
+/*---- Abstract ----*/
+
+@import './abstract/unit';
+@import './abstract/variables';
+@import './abstract/breakpoint';
+
 /*---- Vendor ----*/
 
 @import './vendor/normalize';
-
-/*---- Abstracts----*/
-@import './abstract/variables';
 
 /*---- Base ----*/
 
@@ -14,6 +17,9 @@
 
 /*---- Components ----*/
 
-@import './components/header';
+@import './components/button';
 
 /*---- Layout ----*/
+
+@import './layout/header';
+@import './layout/footer';
