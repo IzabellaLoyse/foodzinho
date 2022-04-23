@@ -4,6 +4,7 @@
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
     "stylelint.vscode-stylelint",
-    "aaron-bond.better-comments"
+    "aaron-bond.better-comments",
+    "simonsiefke.svg-preview"
   ]
 }
