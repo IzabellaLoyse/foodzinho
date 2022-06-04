@@ -16,7 +16,6 @@ $theme-light: (
 
 $global-font-nunito: 'Nunito';
 $global-font-poppins: 'Poppins';
-
 $font-weight: (
   'regular': 400,
   'semi-bold': 600,
@@ -24,7 +23,6 @@ $font-weight: (
   'extra-bold': 800,
   'black': 900,
 );
-
 $font-size: (
   'sm': '0.875rem',
   // 14px
@@ -47,13 +45,15 @@ $spacing: (
   '02': '0.5rem',
   // 8px
   '03': '0.75rem',
-  //12px
+  // 12px
   '04': '1rem',
   // 16px
   '05': '1.25rem',
   // 20px
   '06': '1.5rem',
-  //24px
+  // 24px
   '07': '1.75rem',
   // 28px
+  '08': '2.5rem',
+  // 40px
 );

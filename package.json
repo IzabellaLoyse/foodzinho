@@ -33,7 +33,11 @@
     "postcss": "^8.4.12",
     "prettier": "^2.6.2",
     "stylelint": "^14.7.0",
-    "stylelint-config-sass-guidelines": "^9.0.1"
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard-scss": "^4.0.0",
+    "stylelint-high-performance-animation": "^1.6.0",
+    "stylelint-selector-no-empty": "^1.0.8"
   },
   "config": {
     "commitizen": {
