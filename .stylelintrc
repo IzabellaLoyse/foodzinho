@@ -11,6 +11,7 @@
   "rules": {
     "max-nesting-depth": 3,
     "selector-no-qualifying-type": null,
+    "scss/dollar-variable-empty-line-before": null,
     "plugin/stylelint-selector-no-empty": true,
     "plugin/no-low-performance-animation-properties": [
       true,
