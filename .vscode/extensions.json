@@ -5,6 +5,7 @@
     "esbenp.prettier-vscode",
     "stylelint.vscode-stylelint",
     "aaron-bond.better-comments",
-    "simonsiefke.svg-preview"
+    "simonsiefke.svg-preview",
+    "webhint.vscode-webhint"
   ]
 }
