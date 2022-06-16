@@ -4,10 +4,11 @@
 
 $theme-light: (
   'main-color': #fff,
-  'primary-color': '#000000',
-  'secondary-color': '#252527',
-  'third-color': '#a22e0b',
-  'fourth-color': '#f24e1e',
+  'primary-color': #000,
+  'secondary-color': #252527,
+  'third-color': #a22e0b,
+  'fourth-color': #f24e1e,
+  'focus-color': #818183,
 );
 
 /* ===================================================
@@ -44,6 +45,8 @@ $font-size: (
     * *  Measures
    =================================================== */
 
+$global-border-radius: 10px;
+
 $spacing: (
   '01': 0.25rem,
   // 4px
@@ -62,3 +65,11 @@ $spacing: (
   '08': 2.5rem,
   // 40px
 );
+
+/* ===================================================
+    * *  Transitions
+   =================================================== */
+
+$transition-duration-default: 305ms;
+
+$transition-function-ease-in: cubic-bezier(0.95, 0.05, 0.795, 0.035);

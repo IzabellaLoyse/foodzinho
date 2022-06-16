@@ -1,1 +1,34 @@
 @use 'sass:map';
+
+.c-button {
+  border-radius: $global-border-radius;
+  border-style: none;
+  cursor: pointer;
+  font-size: map.get($font-size, 'base');
+  font-weight: map.get($font-weight, 'black');
+  height: rem(48px);
+  padding: map.get($spacing, '02');
+  text-align: center;
+  transition: $transition-duration-default $transition-function-ease-in;
+  width: rem(216px);
+}
+
+.c-button--main {
+  background-color: map.get($theme-light, 'primary-color');
+  color: map.get($theme-light, 'main-color');
+
+  &:focus {
+    background-color: map.get($theme-light, 'fourth-color');
+    color: map.get($theme-light, 'primary-color');
+  }
+}
+
+.c-button--form {
+  background-color: map.get($theme-light, 'main-color');
+  color: map.get($theme-light, 'primary-color');
+
+  &:focus {
+    background-color: map.get($theme-light, 'focus-color');
+    color: map.get($theme-light, 'primary-color');
+  }
+}
