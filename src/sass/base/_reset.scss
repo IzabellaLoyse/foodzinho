@@ -1,9 +1,11 @@
+/* stylelint-disable property-no-vendor-prefix */
+
+@use 'sass:map';
+
 html {
   box-sizing: border-box;
 }
 
-// @see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
-// @see https://www.nicchan.me/blog/tips-for-focus-styles/#consider-adding-a-little-bit-of-breathing-room
 *,
 *::before,
 *::after {
@@ -11,37 +13,50 @@ html {
   outline-offset: 0.25rem;
 }
 
-// @see https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale/
 body {
-  background-color: map-get($theme-light, 'main-color');
+  background-color: map.get($theme-light, 'main-color');
   font-family: $global-font-nunito, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
 }
 
-// @see https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale/
 p,
 li,
 h1,
 h2,
 h3,
 h4 {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
+  margin-top: 0;
   overflow-wrap: break-word;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: $global-font-poppins, sans-serif;
-  font-weight: map-get($font-weight, 'semi-bold');
+  font-weight: map.get($font-weight, 'semi-bold');
+}
+
+h1 {
+  font-size: map.get($font-size, '2xl');
+}
+
+h2 {
+  font-size: map.get($font-size, 'xl');
+}
+
+h3 {
+  font-size: map.get($font-size, 'lg');
 }
 
 label {
   cursor: pointer;
 }
 
-// @see https://www.zachleat.com/web/fluid-images/
 img {
   max-width: 100%;
 }

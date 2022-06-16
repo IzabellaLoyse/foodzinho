@@ -1,25 +1,7 @@
 @charset 'utf-8';
 
-/* ---- Abstract ---- */
-
-@import './abstract/unit';
-@import './abstract/variables';
-@import './abstract/breakpoint';
-
-/* ---- Vendor ---- */
-
-@import './vendor/normalize';
-
-/* ---- Base ---- */
-
-@import './base/reset';
-@import './base/a11y';
-
-/* ---- Components ---- */
-
-@import './components/button';
-
-/* ---- Layout ---- */
-
-@import './layout/header';
-@import './layout/footer';
+@import 'abstract/index';
+@import 'vendor/index';
+@import 'base/index';
+@import 'components/index';
+@import 'layout/index';

@@ -26,16 +26,18 @@ $font-weight: (
 );
 
 $font-size: (
-  'sm': '0.875rem',
-  // 14px
-  'base': '1rem',
-  // 16px
-  'md': '1.25rem',
-  // 20px
-  'lg': '1.563rem',
-  // 25px
-  'xl': '1.875rem',
-  // 30px
+  'sm': clamp(0.78rem, calc(0.7rem + 0.2vw), 0.88rem),
+  // 14.08px at 1440px resolution
+  'base': clamp(0.78rem, calc(0.61rem + 0.44vw), 1rem),
+  // 16px at 1440px resolution
+  'md': clamp(0.94rem, calc(0.69rem + 0.63vw), 1.25rem),
+  // 20px at 1440px resolution
+  'lg': clamp(1.13rem, calc(0.83rem + 0.75vw), 1.5rem),
+  // 24px at 1440px resolution
+  'xl': clamp(1.35rem, calc(0.93rem + 1.05vw), 1.88rem),
+  // 30px at 1440px resolution
+  '2xl': clamp(1.6rem, calc(1.13rem + 1.25vw), 2.25rem),
+  // 36px at 1440px resolution
 );
 
 /* ===================================================
@@ -43,20 +45,20 @@ $font-size: (
    =================================================== */
 
 $spacing: (
-  '01': '0.25rem',
+  '01': 0.25rem,
   // 4px
-  '02': '0.5rem',
+  '02': 0.5rem,
   // 8px
-  '03': '0.75rem',
+  '03': 0.75rem,
   // 12px
-  '04': '1rem',
+  '04': 1rem,
   // 16px
-  '05': '1.25rem',
+  '05': 1.25rem,
   // 20px
-  '06': '1.5rem',
+  '06': 1.5rem,
   // 24px
-  '07': '1.75rem',
+  '07': 1.75rem,
   // 28px
-  '08': '2.5rem',
+  '08': 2.5rem,
   // 40px
 );
