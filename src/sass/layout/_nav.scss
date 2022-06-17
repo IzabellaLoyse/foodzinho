@@ -1,0 +1,6 @@
+@use 'sass:map';
+
+.l-header__nav {
+  margin-left: map.get($spacing, '09');
+  width: 100%;
+}

@@ -1,0 +1,19 @@
+@use 'sass:map';
+
+.c-header__nav-list {
+  padding-top: map.get($spacing, '06');
+}
+
+.c-header__nav-item {
+  display: inline-flex;
+  padding-left: map.get($spacing, '08');
+
+  .c-header__nav-link {
+    font-size: map.get($font-size, 'md');
+    font-weight: map.get($font-weight, 'bold');
+  }
+
+  .is-header__link--active {
+    border-bottom: 3px solid map.get($theme-light, 'third-color');
+  }
+}

@@ -1,0 +1,10 @@
+@use 'sass:map';
+
+.c-header__logo {
+  margin-right: map.get($spacing, '01');
+
+  .c-header__image {
+    height: rem(42px);
+    width: rem(50px);
+  }
+}

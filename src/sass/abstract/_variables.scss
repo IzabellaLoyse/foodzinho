@@ -18,6 +18,8 @@ $theme-light: (
 $global-font-nunito: 'Nunito';
 $global-font-poppins: 'Poppins';
 
+$letter-spacing-default: 0.02em;
+
 $font-weight: (
   'regular': 400,
   'semi-bold': 600,
@@ -48,22 +50,24 @@ $font-size: (
 $global-border-radius: 10px;
 
 $spacing: (
-  '01': 0.25rem,
-  // 4px
-  '02': 0.5rem,
-  // 8px
-  '03': 0.75rem,
-  // 12px
-  '04': 1rem,
-  // 16px
-  '05': 1.25rem,
-  // 20px
-  '06': 1.5rem,
-  // 24px
-  '07': 1.75rem,
-  // 28px
-  '08': 2.5rem,
-  // 40px
+  '01': clamp(0.25rem, calc(0.25rem + 0vw), 0.25rem),
+  // 4px at 1440px resolution
+  '02': clamp(0.44rem, calc(0.39rem + 0.13vw), 0.5rem),
+  // 8px at 1440px resolution
+  '03': clamp(0.69rem, calc(0.64rem + 0.13vw), 0.75rem),
+  // 12px at 1440px resolution
+  '04': clamp(0.88rem, calc(0.78rem + 0.25vw), 1rem),
+  // 16px at 1440px resolution
+  '05': clamp(1.13rem, calc(1.03rem + 0.25vw), 1.25rem),
+  // 20px at 1440px resolution
+  '06': clamp(1.31rem, calc(1.16rem + 0.38vw), 1.5rem),
+  // 24px at 1440px resolution
+  '07': clamp(1.56rem, calc(1.41rem + 0.38vw), 1.75rem),
+  // 28px at 1440px resolution
+  '08': clamp(2.19rem, calc(1.94rem + 0.63vw), 2.5rem),
+  // 40px at 1440px resolution
+  '09': clamp(5.69rem, calc(5.04rem + 1.63vw), 6.5rem),
+  // 104px at 1440px resolution
 );
 
 /* ===================================================
@@ -71,5 +75,6 @@ $spacing: (
    =================================================== */
 
 $transition-duration-default: 305ms;
+$transition-duration-exit: 205ms;
 
 $transition-function-ease-in: cubic-bezier(0.95, 0.05, 0.795, 0.035);

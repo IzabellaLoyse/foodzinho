@@ -1,1 +1,12 @@
-// Create header
+@use 'sass:map';
+
+.l-header {
+  display: flex;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    margin-bottom: map.get($spacing, '09');
+    margin-top: map.get($spacing, '07');
+  }
+}

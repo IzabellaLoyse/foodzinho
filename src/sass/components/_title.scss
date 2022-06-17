@@ -1,0 +1,14 @@
+@use 'sass:map';
+
+.c-title {
+  font-weight: map.get($font-weight, 'bold');
+  letter-spacing: $letter-spacing-default;
+}
+
+.c-title--primary {
+  color: map.get($theme-light, 'primary-color');
+}
+
+.c-title-secondary {
+  color: map.get($theme-light, 'main-color');
+}
