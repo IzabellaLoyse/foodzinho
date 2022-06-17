@@ -8,12 +8,14 @@
   display: inline-flex;
   padding-left: map.get($spacing, '08');
 
-  .c-header__nav-link {
-    font-size: map.get($font-size, 'md');
-    font-weight: map.get($font-weight, 'bold');
-  }
-
   .is-header__link--active {
-    border-bottom: 3px solid map.get($theme-light, 'third-color');
+    border-bottom: 3px solid map.get($theme-light, 'fourth-color');
   }
+}
+
+.c-header__nav-link {
+  color: map.get($theme-light, 'primary-color');
+  font-size: map.get($font-size, 'md');
+  font-weight: map.get($font-weight, 'bold');
+  transition: $transition-duration-exit $transition-function-ease-in;
 }

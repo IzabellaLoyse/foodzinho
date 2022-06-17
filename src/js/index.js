@@ -1,7 +1,19 @@
-const navItemsElement = document.querySelectorAll('.js-nav-item a');
+function isActiveItem() {
+  const navItemsElement = document.querySelectorAll('.js-nav-link');
+  navItemsElement.forEach((item) => {
+    item.classList.remove('is-header__link--active');
+    item.removeAttribute('aria-current', 'page');
 
-navItemsElement.forEach((item) => {
-  item.addEventListener('click', () => {
-    item.classList.toggle('is-header__link--active');
+    this.classList.add('is-header__link--active');
+    this.setAttribute('aria-current', 'page');
   });
-});
+}
+
+const handleClickItemSelected = () => {
+  const navItemsElement = document.querySelectorAll('.js-nav-link');
+  navItemsElement.forEach((item) => {
+    item.addEventListener('click', isActiveItem);
+  });
+};
+
+handleClickItemSelected();

@@ -6,6 +6,7 @@
     "stylelint.vscode-stylelint",
     "aaron-bond.better-comments",
     "simonsiefke.svg-preview",
-    "webhint.vscode-webhint"
+    "webhint.vscode-webhint",
+    "deque-systems.vscode-axe-linter"
   ]
 }

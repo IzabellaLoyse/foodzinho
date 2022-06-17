@@ -16,7 +16,7 @@
     <title>Foodzinho</title>
   </head>
 
-  <body id="home">
+  <body>
     <header class="l-header l-container">
       <div class="l-header__container">
         <div class="c-header__logo">
@@ -30,31 +30,62 @@
           </a>
         </div>
 
-        <h1 class="c-title c-title--primary">Foodzinho</h1>
+        <h1>
+          <a href="#home" class="c-title c-title--primary">Foodzinho</a>
+        </h1>
       </div>
 
-      <nav class="l-header__nav">
+      <nav aria-label="Menu de navegação" class="l-header__nav">
         <ul class="c-header__nav-list">
-          <li class="c-header__nav-item js-nav-item">
-            <a href="#home" class="c-header__nav-link"> Home </a>
+          <li class="c-header__nav-item">
+            <a
+              href="#home"
+              class="c-header__nav-link js-nav-link is-header__link--active"
+              aria-current="page"
+            >
+              Home
+            </a>
           </li>
-          <li class="c-header__nav-item js-nav-item">
-            <a href="#service" class="c-header__nav-link"> Serviço </a>
+
+          <li class="c-header__nav-item">
+            <a href="#service" class="c-header__nav-link js-nav-link">
+              Serviço
+            </a>
           </li>
-          <li class="c-header__nav-item js-nav-item">
-            <a href="#menu" class="c-header__nav-link"> Menu </a>
+
+          <li class="c-header__nav-item">
+            <a href="#menu" class="c-header__nav-link js-nav-link"> Menu </a>
           </li>
-          <li class="c-header__nav-item js-nav-item">
-            <a href="#contact" class="c-header__nav-link"> Contato </a>
+
+          <li class="c-header__nav-item">
+            <a href="#contact" class="c-header__nav-link js-nav-link">
+              Contato
+            </a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <button type="button" class="c-button c-button--main">
+      <section id="home">
+        <p>home</p>
+      </section>
+
+      <section id="service">
+        <p>service</p>
+      </section>
+
+      <section id="menu">
+        <p>menu</p>
+      </section>
+
+      <section id="contact">
+        <p>contact</p>
+      </section>
+
+      <a href="#menu" class="c-button c-button--main" role="button">
         Conhecer o Menu
-      </button>
+      </a>
 
       <button type="submit" class="c-button c-button--form">Pedir Agora</button>
     </main>
