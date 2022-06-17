@@ -1,0 +1,10 @@
+.l-presentation {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  &__container {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}

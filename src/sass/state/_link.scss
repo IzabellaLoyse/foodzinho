@@ -1,0 +1,5 @@
+@use 'sass:map';
+
+.is-header__link--active {
+  border-bottom: 3px solid map.get($theme-light, 'fourth-color');
+}

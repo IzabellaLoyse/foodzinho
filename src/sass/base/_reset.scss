@@ -17,7 +17,7 @@ html {
 
 body {
   background-color: map.get($theme-light, 'main-color');
-  font-family: $global-font-nunito, sans-serif;
+  font-family: $global-font-nunito;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
@@ -39,7 +39,7 @@ h4 {
 h1,
 h2,
 h3 {
-  font-family: $global-font-poppins, sans-serif;
+  font-family: $global-font-poppins;
   font-weight: map.get($font-weight, 'semi-bold');
 }
 

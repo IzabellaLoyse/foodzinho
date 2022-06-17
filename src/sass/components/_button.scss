@@ -35,11 +35,11 @@
   &:focus,
   &:active {
     background-color: map.get($theme-light, 'focus-color');
-    border: 1px dashed map.get($theme-light, 'primary-color');
+    border: 2px dashed map.get($theme-light, 'primary-color');
     color: map.get($theme-light, 'primary-color');
   }
 
   &:hover {
-    border: 1px dashed map.get($theme-light, 'primary-color');
+    border: 2px dashed map.get($theme-light, 'primary-color');
   }
 }

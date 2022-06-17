@@ -1,6 +1,8 @@
-// ** convert px to rem
+@use 'sass:math';
+
 $base-size: 16px;
 
+// ** convert px to rem
 @function rem($value) {
-  @return $value / $base-size * 1rem;
+  @return math.div($value, $base-size) * 1rem;
 }

@@ -7,10 +7,6 @@
 .c-header__nav-item {
   display: inline-flex;
   padding-left: map.get($spacing, '08');
-
-  .is-header__link--active {
-    border-bottom: 3px solid map.get($theme-light, 'fourth-color');
-  }
 }
 
 .c-header__nav-link {
