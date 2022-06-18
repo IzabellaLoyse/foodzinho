@@ -8,3 +8,11 @@
     width: rem(50px);
   }
 }
+
+.c-presentation__content {
+  margin-left: map.get($spacing, '09');
+
+  .c-presentation__image {
+    width: rem(474px);
+  }
+}

@@ -17,106 +17,110 @@
   </head>
 
   <body>
-    <header class="l-header l-container">
-      <div class="l-header__container">
-        <div class="c-header__logo">
-          <a href="#home">
-            <img
-              src="src/assets/icons/icon-logo-foodzinho.svg"
-              alt="Logo em formato de pedaço de pizza laranja"
-              title="Logo do Foodzinho"
-              class="c-header__image"
-            />
-          </a>
+    <section class="l-grid-system">
+      <header class="l-header l-container">
+        <div class="l-header__container">
+          <div class="c-header__logo">
+            <a href="#home">
+              <img
+                src="src/assets/icons/icon-logo-foodzinho.svg"
+                alt="Logo em formato de pedaço de pizza laranja"
+                title="Logo do Foodzinho"
+                class="c-header__image"
+              />
+            </a>
+          </div>
+
+          <h1>
+            <a href="#home" class="c-title c-title--primary">Foodzinho</a>
+          </h1>
         </div>
 
-        <h1>
-          <a href="#home" class="c-title c-title--primary">Foodzinho</a>
-        </h1>
-      </div>
+        <nav aria-label="Menu de navegação" class="l-header__nav">
+          <ul class="c-header__nav-list">
+            <li class="c-header__nav-item">
+              <a
+                href="#home"
+                class="c-header__nav-link js-nav-link is-header__link--active"
+                aria-current="page"
+              >
+                Home
+              </a>
+            </li>
 
-      <nav aria-label="Menu de navegação" class="l-header__nav">
-        <ul class="c-header__nav-list">
-          <li class="c-header__nav-item">
-            <a
-              href="#home"
-              class="c-header__nav-link js-nav-link is-header__link--active"
-              aria-current="page"
-            >
-              Home
-            </a>
-          </li>
+            <li class="c-header__nav-item">
+              <a href="#service" class="c-header__nav-link js-nav-link">
+                Serviço
+              </a>
+            </li>
 
-          <li class="c-header__nav-item">
-            <a href="#service" class="c-header__nav-link js-nav-link">
-              Serviço
-            </a>
-          </li>
+            <li class="c-header__nav-item">
+              <a href="#menu" class="c-header__nav-link js-nav-link"> Menu </a>
+            </li>
 
-          <li class="c-header__nav-item">
-            <a href="#menu" class="c-header__nav-link js-nav-link"> Menu </a>
-          </li>
+            <li class="c-header__nav-item">
+              <a href="#contact" class="c-header__nav-link js-nav-link">
+                Contato
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-          <li class="c-header__nav-item">
-            <a href="#contact" class="c-header__nav-link js-nav-link">
-              Contato
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <main>
+        <section id="home" class="l-container">
+          <section class="l-presentation">
+            <div class="l-presentation__container">
+              <h2 class="c-title c-title--medium">
+                A melhor comida da região para você, e a entrega mais rápida da
+                cidade.
+              </h2>
+              <p class="c-paragraph c-paragraph--main">
+                Peça a melhor comida conosco a qualquer hora e em qualquer
+                lugar.
+              </p>
 
-    <main>
-      <section id="home" class="l-container">
-        <section class="l-presentation">
-          <div class="l-presentation__container">
-            <h2 class="c-title c-title--medium">
-              A melhor comida da região para você, e a entrega mais rápida da
-              cidade.
-            </h2>
-            <p class="c-paragraph c-paragraph--main">
-              Peça a melhor comida conosco a qualquer hora e em qualquer lugar.
+              <a href="#menu" class="c-button c-button--main" role="button">
+                Conhecer o Menu
+              </a>
+            </div>
+
+            <div class="c-presentation__content">
+              <img
+                src="src/assets/icons/icon-big-hamburger.svg"
+                alt="Ícone de um grande hambúrguer ao lado de uma pessoa"
+                title="Ícone de um hambúrguer"
+                class="c-presentation__image"
+              />
+            </div>
+          </section>
+        </section>
+
+        <section id="service">
+          <p>service</p>
+        </section>
+
+        <section id="menu">
+          <p>menu</p>
+        </section>
+
+        <section id="contact" class="l-container-fluid">
+          <section>
+            <h3>Não perca as nossas promoções diárias!</h3>
+            <p>
+              Pensando em entregar uma boa comida com ótimo preço, a Foodzinho
+              tem promoções diárias pra você!
             </p>
 
-            <a href="#menu" class="c-button c-button--main" role="button">
-              Conhecer o Menu
-            </a>
-          </div>
-
-          <div>
-            <img
-              src="src/assets/icons/icon-big-hamburger.svg"
-              alt="Ícone de um grande hambúrguer ao lado de uma pessoa"
-              title="Ícone de um hambúrguer"
-            />
-          </div>
+            <button type="submit" class="c-button c-button--form">
+              Pedir Agora
+            </button>
+          </section>
         </section>
-      </section>
+      </main>
 
-      <section id="service">
-        <p>service</p>
-      </section>
-
-      <section id="menu">
-        <p>menu</p>
-      </section>
-
-      <section id="contact" class="l-container-fluid">
-        <section>
-          <h3>Não perca as nossas promoções diárias!</h3>
-          <p>
-            Pensando em entregar uma boa comida com ótimo preço, a Foodzinho tem
-            promoções diárias pra você!
-          </p>
-
-          <button type="submit" class="c-button c-button--form">
-            Pedir Agora
-          </button>
-        </section>
-      </section>
-    </main>
-
-    <footer></footer>
+      <footer></footer>
+    </section>
 
     <script src="node_modules/@khanacademy/tota11y/dist/tota11y.min.js"></script>
     <script src="src/js/index.js"></script>

@@ -5,8 +5,8 @@
   width: 100%;
 
   &__container {
+    align-items: flex-end;
     display: flex;
-    margin-bottom: map.get($spacing, '09');
     margin-top: map.get($spacing, '07');
   }
 }
