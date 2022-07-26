@@ -1,16 +1,30 @@
 @use 'sass:map';
 
-.l-presentation {
+.l-presentation,
+.l-content-box {
   align-items: center;
   display: flex;
-  flex-direction: row;
   margin-bottom: map.get($spacing, '09');
   margin-top: map.get($spacing, '09');
   width: 100%;
+}
+
+.l-presentation {
+  flex-direction: row;
 
   &__container {
     display: flex;
     flex-flow: column wrap;
     gap: map.get($spacing, '06');
+  }
+}
+
+.l-content-box {
+  flex-direction: column;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: map.get($spacing, '07');
   }
 }

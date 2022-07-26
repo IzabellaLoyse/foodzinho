@@ -4,10 +4,20 @@
   font-weight: map.get($font-weight, 'regular');
 }
 
-.c-paragraph--main {
+.c-paragraph--main,
+.c-paragraph--service {
   color: map.get($theme-light, 'secondary-color');
+  font-size: map.get($font-size, 'md');
+}
+
+.c-paragraph--main {
   max-width: rem(340px);
   text-align: left;
+}
+
+.c-paragraph--service {
+  max-width: rem(550px);
+  text-align: center;
 }
 
 .c-paragraph--form {
