@@ -16,3 +16,11 @@
     width: rem(474px);
   }
 }
+
+.c-feedback__img {
+  background: url('../../src/assets/images/hamburguer.svg') center no-repeat;
+  border-radius: 50%;
+  height: rem(403px);
+  margin-right: map.get($spacing, '08');
+  width: rem(403px);
+}

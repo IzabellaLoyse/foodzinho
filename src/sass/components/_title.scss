@@ -28,6 +28,12 @@
   text-align: center;
 }
 
+.c-title--feedback {
+  color: map.get($theme-light, 'primary-color');
+  font-size: map.get($font-size, 'lg');
+  line-height: rem(50px);
+}
+
 .c-title-form {
   color: map.get($theme-light, 'main-color');
   text-align: center;

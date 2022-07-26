@@ -19,6 +19,18 @@
   }
 }
 
+.l-feedback {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  margin-bottom: map.get($spacing, '09');
+  margin-top: map.get($spacing, '09');
+
+  &__content {
+    width: rem(600px);
+  }
+}
+
 .l-content-box {
   flex-direction: column;
 
