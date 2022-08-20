@@ -1,14 +1,26 @@
 {
+  "connector": "local",
   "extends": [
-    "development"
+    "web-recommended",
+    "accessibility"
+  ],
+  "formatters": [
+    "html"
   ],
   "hints": {
+    "axe": "error",
     "compat-api/html": [
       "default",
       {
         "ignore": [
           "meta[name=theme-color]"
         ]
+      }
+    ],
+    "html-checker": [
+      "error",
+      {
+        "details": true
       }
     ]
   }

@@ -25,7 +25,7 @@
               <img
                 src="src/assets/icons/icon-logo-foodzinho.svg"
                 alt="Logo em formato de pedaço de pizza laranja"
-                title="Logo do Foodzinho"
+                title="Logo do site"
                 class="c-header__image"
               />
             </a>
@@ -36,9 +36,32 @@
           </h1>
         </div>
 
-        <nav aria-label="Menu de navegação" class="l-header__nav">
-          <ul class="c-header__nav-list">
-            <li class="c-header__nav-item">
+        <nav
+          aria-label="Menu de navegação"
+          class="l-header__nav js-navigation"
+          role="navigation"
+        >
+          <button
+            type="button"
+            title="Menu de navegação"
+            aria-label="Menu de navegação"
+            class="c-button--hamburger js-button-hamburger"
+          >
+            <svg
+              viewBox="0 0 100 80"
+              width="20"
+              height="20"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <rect width="100" height="20"></rect>
+              <rect y="30" width="100" height="20"></rect>
+              <rect y="60" width="100" height="20"></rect>
+            </svg>
+          </button>
+
+          <ul class="c-header__nav-list" role="menu">
+            <li class="c-header__nav-item" role="menuitem">
               <a
                 href="#home"
                 class="c-header__nav-link js-nav-link is-header__link--active"
@@ -48,17 +71,17 @@
               </a>
             </li>
 
-            <li class="c-header__nav-item">
+            <li class="c-header__nav-item" role="menuitem">
               <a href="#service" class="c-header__nav-link js-nav-link">
                 Serviço
               </a>
             </li>
 
-            <li class="c-header__nav-item">
+            <li class="c-header__nav-item" role="menuitem">
               <a href="#menu" class="c-header__nav-link js-nav-link"> Menu </a>
             </li>
 
-            <li class="c-header__nav-item">
+            <li class="c-header__nav-item" role="menuitem">
               <a href="#contact" class="c-header__nav-link js-nav-link">
                 Contato
               </a>
@@ -69,7 +92,7 @@
 
       <main>
         <section id="home" class="l-container">
-          <section class="l-presentation">
+          <div class="l-presentation">
             <div class="l-presentation__container">
               <h2 class="c-title c-title--medium">
                 A melhor comida da região para você, e a entrega mais rápida da
@@ -93,11 +116,11 @@
                 class="c-presentation__image"
               />
             </div>
-          </section>
+          </div>
         </section>
 
         <section id="service" class="l-container">
-          <section class="l-content-box">
+          <div class="l-content-box">
             <div class="l-content-box__container">
               <h2 class="c-title c-title--service">
                 Saiba como podemos atendê-lo e entregar sua comida favorita
@@ -108,15 +131,15 @@
               Sempre fornecemos o melhor serviço para você e entregamos sua
               comida favorita no seu destino
             </p>
-          </section>
+          </div>
         </section>
 
         <section id="menu">
-          <p>menu</p>
+          <h2>Menu</h2>
         </section>
 
         <section class="l-container">
-          <section class="l-feedback">
+          <div class="l-feedback">
             <div class="c-feedback__img"></div>
 
             <div class="l-feedback__content">
@@ -125,15 +148,15 @@
               </h2>
               <p>
                 Os hambúrgueres são realmente deliciosos, a textura da comida é
-                muito crocante. O tomate organânico é delicioso e de acordo com
-                o meu gosto. O queijo maltado deixa um sabor único.
+                muito crocante. O tomate orgânico é delicioso e de acordo com o
+                meu gosto. O queijo maltado deixa um sabor único.
               </p>
             </div>
-          </section>
+          </div>
         </section>
 
         <section id="contact" class="l-container-fluid">
-          <section>
+          <div>
             <h3>Não perca as nossas promoções diárias!</h3>
             <p>
               Pensando em entregar uma boa comida com ótimo preço, a Foodzinho
@@ -143,8 +166,10 @@
             <button type="submit" class="c-button c-button--form">
               Pedir Agora
             </button>
-          </section>
+          </div>
         </section>
+
+        <button type="button" class="c-button--toggle-theme">X</button>
       </main>
 
       <footer></footer>

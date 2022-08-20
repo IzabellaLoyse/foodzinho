@@ -43,3 +43,18 @@
     border: 2px dashed map.get($theme-light, 'primary-color');
   }
 }
+
+.c-button--hamburger {
+  visibility: hidden;
+
+  @media (max-width: 980px) {
+    background-color: transparent;
+    visibility: visible;
+  }
+}
+
+.c-button--toggle-theme {
+  bottom: 50px;
+  position: fixed;
+  right: 50px;
+}

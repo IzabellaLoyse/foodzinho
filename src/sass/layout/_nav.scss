@@ -1,6 +1,9 @@
 @use 'sass:map';
 
 .l-header__nav {
-  margin-left: map.get($spacing, '09');
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: map.get($spacing, '06');
   width: 100%;
 }

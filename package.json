@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "sass --watch src/sass:dist/css --style compressed",
     "commit": "git-cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "hint": "hint http://localhost:8080"
   },
   "keywords": [
     "foodzinho",
@@ -28,6 +29,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
+    "hint": "^7.1.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.8",
     "postcss": "^8.4.12",

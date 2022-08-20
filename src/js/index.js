@@ -17,3 +17,13 @@ const handleClickItemSelected = () => {
 };
 
 handleClickItemSelected();
+
+const buttonHamburger = document.querySelector('.js-button-hamburger');
+
+const toggleMenuHamburger = () => {
+  const navigation = document.querySelector('.js-navigation');
+
+  navigation.classList.toggle('is-header__nav--active');
+};
+
+buttonHamburger.addEventListener('click', toggleMenuHamburger);

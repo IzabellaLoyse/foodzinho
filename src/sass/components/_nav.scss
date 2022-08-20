@@ -1,12 +1,26 @@
 @use 'sass:map';
 
 .c-header__nav-list {
-  padding-top: map.get($spacing, '06');
+  padding-top: map.get($spacing, '04');
+
+  @media (max-width: 980px) {
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    visibility: hidden;
+    width: calc(100% - 70px);
+    z-index: 1000;
+  }
 }
 
 .c-header__nav-item {
   display: inline-flex;
   padding-left: map.get($spacing, '08');
+
+  @media (max-width: 980px) {
+    display: block;
+  }
 }
 
 .c-header__nav-link {
@@ -14,4 +28,14 @@
   font-size: map.get($font-size, 'md');
   font-weight: map.get($font-weight, 'bold');
   transition: $transition-duration-exit $transition-function-ease-in;
+}
+
+// Menu Hamburger
+
+.l-header__nav.is-header__nav--active {
+  .c-header__nav-list {
+    @media (max-width: 980px) {
+      visibility: visible;
+    }
+  }
 }

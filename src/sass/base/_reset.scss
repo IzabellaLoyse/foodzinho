@@ -25,7 +25,6 @@ body {
 
 p,
 li,
-h1,
 h2,
 h3,
 h4 {
@@ -59,6 +58,10 @@ a {
   display: inline-block;
   text-decoration: none;
   width: 100%;
+
+  @media (max-width: 980px) {
+    display: inline;
+  }
 
   &:focus,
   &:hover,
