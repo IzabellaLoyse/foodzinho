@@ -3,13 +3,16 @@
 .c-header__nav-list {
   padding-top: map.get($spacing, '04');
 
-  @media (max-width: 980px) {
+  @media (max-width: rem(780px)) {
+    background-color: map.get($theme-light, 'main-color');
+    display: block;
     height: 100vh;
     position: absolute;
     right: 0;
-    top: 70px;
+    top: 0;
+    transition: $transition-duration-default;
     visibility: hidden;
-    width: calc(100% - 70px);
+    width: 100vw;
     z-index: 1000;
   }
 }
@@ -18,8 +21,9 @@
   display: inline-flex;
   padding-left: map.get($spacing, '08');
 
-  @media (max-width: 980px) {
+  @media (max-width: rem(780px)) {
     display: block;
+    padding-bottom: map.get($spacing, '07');
   }
 }
 
@@ -34,7 +38,7 @@
 
 .l-header__nav.is-header__nav--active {
   .c-header__nav-list {
-    @media (max-width: 980px) {
+    @media (max-width: rem(780px)) {
       visibility: visible;
     }
   }

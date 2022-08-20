@@ -14,6 +14,10 @@
 
   .c-presentation__image {
     width: rem(474px);
+
+    @media (max-width: rem(980px)) {
+      display: none;
+    }
   }
 }
 

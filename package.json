@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "sass --watch src/sass:dist/css --style compressed",
     "commit": "git-cz",
-    "prepare": "husky install",
-    "hint": "hint http://localhost:8080"
+    "prepare": "husky install"
   },
   "keywords": [
     "foodzinho",

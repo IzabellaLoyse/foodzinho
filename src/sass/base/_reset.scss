@@ -5,6 +5,7 @@
 
 html {
   box-sizing: border-box;
+  overflow: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
@@ -56,7 +57,7 @@ h3 {
 }
 
 li > a {
-  @media (max-width: 980px) {
+  @media (max-width: rem(980px)) {
     display: initial;
   }
 }

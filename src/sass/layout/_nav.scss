@@ -6,4 +6,18 @@
   justify-content: flex-end;
   margin-right: map.get($spacing, '06');
   width: 100%;
+
+  @media (max-width: rem(980px)) {
+    justify-content: flex-start;
+  }
+
+  @media (max-width: rem(780px)) {
+    justify-content: center;
+  }
+
+  @media (max-width: rem(510px)) {
+    justify-content: flex-start;
+    margin-left: rem(50px);
+    width: 50%;
+  }
 }
