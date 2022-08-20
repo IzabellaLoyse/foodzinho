@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 /* stylelint-disable property-no-vendor-prefix */
 
 @use 'sass:map';
@@ -54,14 +55,16 @@ h3 {
   font-size: map.get($font-size, 'lg');
 }
 
+li > a {
+  @media (max-width: 980px) {
+    display: initial;
+  }
+}
+
 a {
-  display: inline-block;
+  display: inherit;
   text-decoration: none;
   width: 100%;
-
-  @media (max-width: 980px) {
-    display: inline;
-  }
 
   &:focus,
   &:hover,
