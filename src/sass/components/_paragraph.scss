@@ -23,3 +23,15 @@
 .c-paragraph--form {
   color: map.get($theme-light, 'main-color');
 }
+
+.c-paragraph--info {
+  color: map.get($theme-light, 'primary-color');
+  font-size: rem(14px);
+  font-weight: map.get($font-weight, 'extra-bold');
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.c-budget--info {
+  color: map.get($theme-light, 'third-color');
+}

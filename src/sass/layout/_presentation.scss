@@ -11,11 +11,22 @@
 
 .l-presentation {
   flex-direction: row;
+  justify-content: space-around;
 
   &__container {
     display: flex;
     flex-flow: column wrap;
     gap: map.get($spacing, '06');
+  }
+
+  &__infos {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: map.get($spacing, '08');
+    justify-content: flex-start;
+    margin-top: map.get($spacing, '06');
+    width: 100%;
   }
 }
 
@@ -42,5 +53,9 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: map.get($spacing, '07');
+  }
+
+  &__link {
+    margin-top: map.get($spacing, '07');
   }
 }

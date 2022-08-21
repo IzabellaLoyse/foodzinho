@@ -9,6 +9,19 @@
   }
 }
 
+.c-presentation__icon {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .c-icon {
+    height: rem(50px);
+    margin-bottom: map.get($spacing, '03');
+    width: rem(50px);
+  }
+}
+
 .c-presentation__content {
   margin-left: map.get($spacing, '09');
 
