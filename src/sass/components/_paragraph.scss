@@ -35,3 +35,9 @@
 .c-budget--info {
   color: map.get($theme-light, 'third-color');
 }
+
+.c-paragraph--delivery {
+  color: map.get($theme-light, 'secondary-color');
+  font-size: map.get($font-size, 'base');
+  text-align: center;
+}

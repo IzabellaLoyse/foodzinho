@@ -9,7 +9,7 @@
   }
 }
 
-.c-presentation__icon {
+.c-presentation__icons {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,40 @@
     @media (max-width: rem(980px)) {
       display: none;
     }
+  }
+}
+
+.c-content-box__package,
+.c-content-box__delivery,
+.c-content-box__ready-food {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c-content-box__delivery {
+  .c-icon--big {
+    margin-bottom: map.get($spacing, '03');
+    width: rem(250px);
+  }
+}
+
+.c-content-box__package {
+  transform: translateY(-25px);
+
+  .c-icon--big {
+    margin-bottom: map.get($spacing, '03');
+    width: rem(200px);
+  }
+}
+
+.c-content-box__ready-food {
+  transform: translateY(-15px);
+
+  .c-icon--big {
+    margin-bottom: map.get($spacing, '03');
+    width: rem(250px);
   }
 }
 
