@@ -13,6 +13,14 @@
   width: rem(216px);
 }
 
+.c-button--teste {
+  align-items: center;
+  background-color: rgb(255 136 0);
+  color: rgb(255 255 255);
+  display: inline-flex;
+  justify-content: center;
+}
+
 .c-button--main {
   align-items: center;
   background-color: map.get($theme-light, 'primary-color');
@@ -31,6 +39,7 @@
 .c-button--form {
   background-color: map.get($theme-light, 'main-color');
   color: map.get($theme-light, 'primary-color');
+  margin-top: 2rem;
 
   &:focus,
   &:active {
@@ -61,17 +70,26 @@
   }
 }
 
-.c-button--toggle-theme {
+.c-teste {
+  background-color: rgb(255 136 0);
+  color: #8f2121;
+}
+
+.c-button--back-to-top {
+  align-items: center;
+  background-color: map.get($theme-light, 'fourth-color');
   border: 0;
   border-radius: 50%;
   bottom: 50px;
+  display: flex;
   height: rem(30px);
+  justify-content: center;
   position: fixed;
   right: 50px;
   transition: $transition-duration-default;
   width: rem(30px);
 
   &:hover {
-    border: 2px solid map.get($theme-light, 'fourth-color');
+    border: 1px dashed map.get($theme-light, 'primary-color');
   }
 }

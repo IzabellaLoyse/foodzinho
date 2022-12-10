@@ -16,7 +16,16 @@ const handleClickItemSelected = () => {
   });
 };
 
-handleClickItemSelected();
+const handleBackToTop = () => {
+  const button = document.querySelector('.js-back-to-top');
+
+  button.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+};
 
 const buttonHamburger = document.querySelector('.js-button-hamburger');
 
@@ -27,3 +36,6 @@ const toggleMenuHamburger = () => {
 };
 
 buttonHamburger.addEventListener('click', toggleMenuHamburger);
+
+handleClickItemSelected();
+handleBackToTop();

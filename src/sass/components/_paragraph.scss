@@ -4,8 +4,13 @@
   font-weight: map.get($font-weight, 'regular');
 }
 
+.c-paragraph--teste {
+  color: #c3843a;
+}
+
 .c-paragraph--main,
-.c-paragraph--service {
+.c-paragraph--service,
+.c-paragraph--feedback {
   color: map.get($theme-light, 'secondary-color');
   font-size: map.get($font-size, 'md');
 }
@@ -40,4 +45,9 @@
   color: map.get($theme-light, 'secondary-color');
   font-size: map.get($font-size, 'base');
   text-align: center;
+}
+
+.c-paragraph--feedback {
+  max-width: rem(448px);
+  text-align: left;
 }

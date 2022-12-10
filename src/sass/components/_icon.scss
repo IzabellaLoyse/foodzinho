@@ -36,7 +36,8 @@
 
 .c-content-box__package,
 .c-content-box__delivery,
-.c-content-box__ready-food {
+.c-content-box__ready-food,
+.c-feedback__description {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -68,10 +69,33 @@
   }
 }
 
-.c-feedback__img {
-  background: url('../../src/assets/images/hamburguer.svg') center no-repeat;
-  border-radius: 50%;
-  height: rem(403px);
-  margin-right: map.get($spacing, '08');
-  width: rem(403px);
+.c-feedback__box {
+  .c-feedback__image {
+    border-radius: 50%;
+    height: rem(344px);
+    width: rem(490px);
+  }
+}
+
+.c-feedback__description {
+  flex-direction: row;
+  gap: map.get($spacing, '05');
+  justify-content: flex-start;
+  margin-bottom: map.get($spacing, '06');
+  margin-top: map.get($spacing, '06');
+
+  .c-feedback__character {
+    height: rem(48px);
+    width: rem(48px);
+  }
+}
+
+.c-form__content {
+  display: flex;
+  flex-flow: wrap column;
+  margin-top: map.get($spacing, '06');
+
+  .c-form__image {
+    width: rem(370px);
+  }
 }

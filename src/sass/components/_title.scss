@@ -5,9 +5,14 @@
   letter-spacing: $letter-spacing-default;
 }
 
+.c-title--teste {
+  color: #b59c8e;
+}
+
 .c-title--primary,
 .c-title--medium,
-.c-title--service {
+.c-title--service,
+.c-title--feedback {
   color: map.get($theme-light, 'primary-color');
   max-width: rem(600px);
 }
@@ -20,18 +25,13 @@
   }
 }
 
-.c-title--medium {
+.c-title--medium,
+.c-title--feedback {
   text-align: left;
 }
 
 .c-title--service {
   text-align: center;
-}
-
-.c-title--feedback {
-  color: map.get($theme-light, 'primary-color');
-  font-size: map.get($font-size, 'lg');
-  line-height: rem(50px);
 }
 
 .c-title-form {

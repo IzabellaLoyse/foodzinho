@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,173 +13,138 @@
     />
 
     <link rel="stylesheet" href="dist/css/style.css" />
-    <title>Foodzinho</title>
+    <title>Foodzinho sem Acessibilidade</title>
   </head>
 
   <body>
-    <section class="l-grid-system">
-      <header class="l-header l-container">
+    <div class="l-grid-system">
+      <div class="l-header l-container">
         <div class="l-header__container">
           <div class="c-header__logo">
             <a href="#home">
               <img
                 src="src/assets/icons/icon-logo-foodzinho.svg"
-                alt="Logo em formato de pedaço de pizza laranja"
-                title="Logo do site"
                 class="c-header__image"
               />
             </a>
           </div>
 
-          <h1>
-            <a href="#home" class="c-title c-title--primary">Foodzinho</a>
-          </h1>
+          <h2>
+            <a href="#home" class="c-title c-title--teste">Foodzinho</a>
+          </h2>
         </div>
 
-        <nav aria-label="Menu de navegação" class="l-header__nav js-navigation">
-          <button
-            type="button"
-            title="Menu de navegação"
-            aria-label="Menu de navegação"
-            aria-haspopup="true"
-            aria-controls="menu"
-            aria-expanded="false"
-            class="c-button--hamburger js-button-hamburger"
-          >
-            <svg
-              viewBox="0 0 100 80"
-              width="25"
-              height="30"
-              aria-hidden="true"
-              focusable="false"
-            >
+        <div class="l-header__nav js-navigation">
+          <div  class="c-button--hamburger js-button-hamburger">
+            <svg viewBox="0 0 100 80" width="25" height="30" >
               <rect width="100" height="20"></rect>
               <rect y="30" width="100" height="20"></rect>
               <rect y="60" width="100" height="20"></rect>
             </svg>
-          </button>
+          </div>
 
-          <ul class="c-header__nav-list" role="menu">
-            <li class="c-header__nav-item" role="menuitem">
-              <a
-                href="#home"
-                class="c-header__nav-link js-nav-link is-header__link--active"
-                aria-current="page"
-              >
-                Home
-              </a>
-            </li>
+          <div class="c-header__nav-list">
+            <p class="c-header__nav-item">
+              <a href="#home" class="c-title--teste"> Home </a>
+            </p>
 
-            <li class="c-header__nav-item" role="menuitem">
-              <a href="#service" class="c-header__nav-link js-nav-link">
-                Serviço
-              </a>
-            </li>
+            <p class="c-header__nav-item">
+              <a href="#service" class="c-title--teste"> Serviço </a>
+            </p>
 
-            <li class="c-header__nav-item" role="menuitem">
-              <a href="#menu" class="c-header__nav-link js-nav-link"> Menu </a>
-            </li>
+            <p class="c-header__nav-item">
+              <a href="./menu.html" class="c-title--teste"> Menu </a>
+            </p>
 
-            <li class="c-header__nav-item" role="menuitem">
-              <a href="#contact" class="c-header__nav-link js-nav-link">
-                Contato
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+            <p class="c-header__nav-item">
+              <a href="#contact" class="c-title--teste"> Contato </a>
+            </p>
+          </div>
+        </div>
+      </div>
 
-      <main>
-        <section id="home" class="l-container">
+      <div>
+        <div id="home" class="l-container">
           <div class="l-presentation">
             <div class="l-presentation__container">
-              <h2 class="c-title c-title--medium">
+              <h2 class="c-title c-title--teste">
                 A melhor comida da região para você, e a entrega mais rápida da
                 cidade.
               </h2>
-              <p class="c-paragraph c-paragraph--main">
+              <p class="c-paragraph c-paragraph--teste">
                 Peça a melhor comida conosco a qualquer hora e em qualquer
                 lugar.
               </p>
 
-              <a href="#menu" class="c-button c-button--main" role="button">
+              <a
+                href="./menu.html"
+                class="c-button c-button--teste"
+
+              >
                 Conhecer o Menu
               </a>
 
-              <section class="l-presentation__infos">
+              <divn class="l-presentation__infos">
                 <div class="c-presentation__icons">
-                  <img
-                    src="src/assets/icons/icon-medal.svg"
-                    alt="Ícone de uma medalha de ouro com uma fita azul"
-                    class="c-icon"
-                    title="Ícone de uma medalha pequena"
-                  />
-                  <p class="c-paragraph--info">240k Reviews</p>
-                  <p class="c-paragraph--info">(4.8)</p>
+                  <img src="src/assets/icons/icon-medal.svg" class="c-icon" />
+                  <p class="c-paragraph--teste">240k Reviews</p>
+                  <p class="c-paragraph--teste">(4.8)</p>
                 </div>
 
                 <div class="c-presentation__icons">
                   <img
                     src="src/assets/icons/icon-restaurant.svg"
-                    alt="Ícone da faixada de restaurante"
                     class="c-icon"
-                    title="Ícone de um restaurante pequeno"
                   />
-                  <p class="c-paragraph--info">
+                  <p class="c-paragraph--teste">
                     200 <span class="c-budget--info">+</span>
                   </p>
-                  <p class="c-paragraph--info">Restaurantes</p>
+                  <p class="c-paragraph--teste">Restaurantes</p>
                 </div>
 
                 <div class="c-presentation__icons">
                   <img
                     src="src/assets/icons/icon-hamburger.svg"
-                    alt="Ícone de um hambúrguer pequeno"
                     class="c-icon"
-                    title="Ícone de um hambúrguer"
                   />
-                  <p class="c-paragraph--info">
+                  <p class="c-paragraph--teste">
                     300 <span class="c-budget--info">+</span>
                   </p>
-                  <p class="c-paragraph--info">Comidas</p>
+                  <p class="c-paragraph--teste">Comidas</p>
                 </div>
-              </section>
+              </divn>
             </div>
 
             <div class="c-presentation__content">
               <img
                 src="src/assets/icons/icon-big-hamburger.svg"
-                alt="Ícone de um grande hambúrguer ao lado de uma pessoa"
-                title="Ícone de um hambúrguer grande"
                 class="c-presentation__image"
               />
             </div>
           </div>
-        </section>
+        </div>
 
-        <section id="service" class="l-container">
+        <div id="service" class="l-container">
           <div class="l-content-box">
             <div class="l-content-box__container">
-              <h2 class="c-title c-title--service">
+              <h2 class="c-title c-title--teste">
                 Saiba como podemos atendê-lo e entregar sua comida favorita
               </h2>
             </div>
 
-            <p class="c-paragraph--service">
+            <p class="c-paragraph--teste">
               Sempre fornecemos o melhor serviço para você e entregamos sua
               comida favorita no seu destino
             </p>
 
-            <section class="l-content-box__infos">
+            <div class="l-content-box__infos">
               <div class="c-content-box__delivery">
                 <img
                   src="src/assets/icons/icon-delivery-woman.svg"
-                  alt="Ícone de uma mulher dirigindo uma motocicleta"
-                  title="Mulher dirigindo uma motocicleta"
                   class="c-icon--big"
                 />
-                <h3 class="c-title c-title--service">Entregamos sua comida</h3>
-                <p class="c-paragraph c-paragraph--delivery">
+                <h2 class="c-title c-title--teste">Entregamos sua comida</h2>
+                <p class="c-paragraph c-paragraph--teste">
                   Escolha sua comida e peça diretamente da sua casa
                 </p>
               </div>
@@ -187,12 +152,10 @@
               <div class="c-content-box__package">
                 <img
                   src="src/assets/icons/icon-package-delivery.svg"
-                  alt="Ícone de uma mulher carregando uma caixa"
-                  title="Mulher carregando uma caixa"
                   class="c-icon--big"
                 />
-                <h3 class="c-title c-title--service">Empresa de confiança</h3>
-                <p class="c-paragraph c-paragraph--delivery">
+                <h2 class="c-title c-title--teste">Empresa de confiança</h2>
+                <p class="c-paragraph c-paragraph--teste">
                   Seu pedido entregue com o melhor serviço de delivery
                 </p>
               </div>
@@ -200,77 +163,69 @@
               <div class="c-content-box__ready-food">
                 <img
                   src="src/assets/icons/icon-ready-food.svg"
-                  alt="Ícone de um prato de comida grande"
-                  title="Um prato de comida grande"
                   class="c-icon--big"
                 />
-                <h3 class="c-title c-title--service">Feito na hora</h3>
-                <p class="c-paragraph c-paragraph--delivery">
+                <h2 class="c-title c-title--teste">Feito na hora</h2>
+                <p class="c-paragraph c-paragraph--teste">
                   Sua comida é feita na hora e chegará pronta para servir
                 </p>
               </div>
-            </section>
+            </div>
           </div>
-        </section>
+        </div>
 
-        <section id="menu" class="l-container">
+        <div id="menu" class="l-container">
           <div class="l-content-box">
             <div class="l-content-box__container">
-              <h2 class="c-title c-title--service">
+              <h2 class="c-title c-title--teste">
                 Nosso menu possui variedades de sabores e estilos
               </h2>
             </div>
 
-            <p class="c-paragraph--service">
+            <p class="c-paragraph--teste">
               Conheça o nosso cardápio com os mais diversos hambúrgueres, nossas
               comidas são preparadas com muito amor e estilo
             </p>
 
             <div class="l-content-box__link">
-              <!-- <a
-                href="./menu.html"
-                class="c-button c-button--main"
-                role="button"
-              >
+              <a href="./menu.html" class="c-button c-button--teste">
                 Conhecer o Menu
-              </a> -->
+              </a>
             </div>
           </div>
-        </section>
+        </div>
 
-        <section class="l-container">
+        <div class="l-container">
           <div class="l-feedback">
             <div class="c-feedback__box">
               <img
                 src="src/assets/images/hamburguer.svg"
-                alt="Foto de um hambúrguer grande de bife com cheddar"
-                title="Hambúrguer grande de bife com cheddar"
                 class="c-feedback__image"
               />
             </div>
 
-            <section class="l-feedback__content">
-              <h2 class="c-title c-title--feedback">
+            <div class="l-feedback__content">
+              <h2 class="c-title c-title--teste">
                 O que os nossos clientes dizem sobre as nossas comidas
               </h2>
 
               <div class="c-feedback__description">
                 <img
                   src="src/assets/icons/icon-character.svg"
-                  alt="Ícone de uma representação de um cliente"
-                  title="Ícone de de um cliente"
                   class="c-feedback__character"
                 />
 
                 <div>
-                  <p>
+                  <p class="c-paragraph c-paragraph--teste">
                     <strong>Maria Leopoldina</strong>
                   </p>
-                  <p>Foodzinho de Téofilo Otoni</p>
+                  <p class="c-paragraph c-paragraph--teste">
+                    Foodzinho de Téofilo Otoni
+                  </p>
                 </div>
               </div>
 
-              <p class="c-paragraph c-paragraph--feedback">
+              <p class="c-paragraph c-paragraph--teste">
                 Os hambúrgueres são realmente deliciosos, a textura da comida é
                 muito crocante. O tomate orgânico é delicioso e de acordo com o
                 meu gosto. O queijo maltado deixa um sabor único.
@@ -278,19 +233,21 @@
 
               <div>
                 <!-- <img src="src/assets/icons/icon-star.svg" alt="" /> -->
-                <p><span>4.9</span> (240 Reviews)</p>
+                <p class="c-paragraph c-paragraph--teste">
+                  <span>4.9</span> (240 Reviews)
+                </p>
               </div>
-            </section>
+            </div>
           </div>
-        </section>
+        </div>
 
         <section id="contact" class="l-container-fluid">
           <div class="l-form">
             <div class="c-form__content">
-              <h3 class="c-form__subtitle">
+              <h3 class="c-form__subtitle c-form-teste ">
                 Não perca as nossas promoções diárias!
               </h3>
-              <p class="c-form__description">
+              <p class="c-form__description c-form-teste ">
                 Pensando em entregar uma boa comida com ótimo preço, a Foodzinho
                 tem promoções diárias pra você!
               </p>
@@ -304,76 +261,60 @@
 
             <section class="l-container-form">
               <form class="c-form-page">
-                <h3>Entre em contato</h3>
+                <h3 class="c-form-teste ">Entre em contato</h3>
 
                 <div class="c-form-group">
-                  <label for="name" class="c-form-group__label">Nome</label>
+
                   <input
                     class="c-form-group__input"
                     type="text"
-                    name="name"
-                    id="name"
+
+
                     placeholder="Nome"
-                    autocomplete
+
                     required
-                    aria-required="true"
+
                   />
                 </div>
 
                 <div class="c-form-group">
-                  <label for="phone" class="c-form-group__label"
-                    >Telefone</label
-                  >
+
                   <input
                     class="c-form-group__input"
                     type="text"
-                    name="phone"
-                    id="phone"
                     placeholder="Telefone"
-                    autocomplete
                     required
-                    aria-required="true"
+
                   />
                 </div>
 
                 <div class="c-form-group">
-                  <label for="email" class="c-form-group__label">E-mail</label>
                   <input
                     class="c-form-group__input"
                     type="email"
-                    name="email"
-                    id="email"
                     placeholder="Email"
-                    autocomplete
+
                   />
                 </div>
 
-                <button type="submit" class="c-button c-button--form">
+                <button type="submit" class="c-button c-button--teste">
                   Pedir Agora
                 </button>
               </form>
             </section>
           </div>
-        </section>
+        </section>s
 
-        <button
-          type="button"
-          class="c-button--back-to-top js-back-to-top"
-          title="Voltar ao topo da página"
-          aria-label="Voltar ao topo da página"
-        >
-          <img
-            src="src/assets/icons/icon-arrow-top.png"
-            alt="Ícone de uma seta apontando para cima"
-            title="Ícone de uma seta para cima"
-          />
+
+        <button  class="c-button--toggle-theme c-teste">
+          &#94;
         </button>
-      </main>
+      </div>
 
-      <footer>
+      <div>
         <p>&copy; 2022 Foodzinho. Todos os direitos reservados.</p>
-      </footer>
-    </section>
+      </div>
+    </div>
 
     <script src="node_modules/@khanacademy/tota11y/dist/tota11y.min.js"></script>
     <script src="src/js/index.js"></script>

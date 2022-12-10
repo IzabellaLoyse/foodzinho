@@ -1,7 +1,8 @@
 @use 'sass:map';
 
 .l-presentation,
-.l-content-box {
+.l-content-box,
+.l-feedback {
   align-items: center;
   display: flex;
   margin-bottom: map.get($spacing, '09');
@@ -60,12 +61,26 @@
 
 .l-feedback {
   align-items: flex-start;
-  display: flex;
-  justify-content: center;
-  margin-bottom: map.get($spacing, '09');
-  margin-top: map.get($spacing, '09');
 
   &__content {
-    width: rem(600px);
+    display: flex;
+    flex-flow: wrap column;
+    margin-left: map.get($spacing, '09');
   }
+}
+
+.l-form {
+  align-items: flex-start;
+  background-color: map.get($theme-light, 'primary-color');
+  color: map.get($theme-light, 'main-color');
+  display: flex;
+  justify-content: space-around;
+}
+
+.l-container-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: map.get($spacing, '06');
 }
