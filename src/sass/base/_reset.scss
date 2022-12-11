@@ -2,6 +2,7 @@
 /* stylelint-disable property-no-vendor-prefix */
 @use '../abstract/variables';
 @use '../abstract/functions';
+@use '../abstract/breakpoint';
 @use 'sass:map';
 
 html {
@@ -11,10 +12,15 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
   outline-offset: 0.25rem;
 }
 
@@ -58,7 +64,7 @@ h3 {
 }
 
 li > a {
-  @media (max-width: functions.rem(980px)) {
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
     display: initial;
   }
 }

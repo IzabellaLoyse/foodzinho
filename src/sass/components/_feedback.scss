@@ -29,7 +29,7 @@
 }
 
 .c-feedback__reviews {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   gap: map.get(variables.$spacing, '04');
   justify-content: flex-start;

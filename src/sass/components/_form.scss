@@ -3,8 +3,26 @@
 @use '../abstract/breakpoint';
 @use 'sass:map';
 
+.c-form__content {
+  align-items: center;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+    transform: translateY(-40px);
+  }
+
+  .c-form__image {
+    width: functions.rem(370px);
+
+    @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+      display: none;
+    }
+  }
+}
+
 .c-form__subtitle {
-  margin-top: 5.5rem;
+  margin-top: 6rem;
   padding-bottom: map.get(variables.$spacing, '06');
 }
 
@@ -12,6 +30,10 @@
   font-size: 1.1rem;
   font-weight: map.get(variables.$font-weight, 'regular');
   width: functions.rem(450px);
+
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+    text-align: center;
+  }
 }
 
 .c-container-form {
@@ -27,22 +49,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: scaleY(1);
+  transform: translateY(-40px);
 
   h3 {
     padding-bottom: map.get(variables.$spacing, '06');
     text-align: center;
-  }
-}
 
-.c-form__content {
-  align-items: center;
-  display: flex;
-  flex-flow: wrap column;
-  justify-content: center;
-
-  .c-form__image {
-    width: functions.rem(370px);
+    @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+      padding-bottom: map.get(variables.$spacing, '04');
+    }
   }
 }
 
@@ -53,14 +68,18 @@
   margin-bottom: map.get(variables.$spacing, '04');
   width: 100%;
 
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+    width: 85%;
+  }
+
   &__label {
-    font-size: functions.rem(16px);
+    font-size: map.get(variables.$font-size, 'base');
     font-weight: map.get(variables.$font-weight, 'bold');
   }
 
   &__input {
     border-radius: 5px;
-    font-size: functions.rem(18px);
+    font-size: map.get(variables.$font-size, 'base');
     height: functions.rem(40px);
     max-width: 100%;
     padding: map.get(variables.$spacing, '02');

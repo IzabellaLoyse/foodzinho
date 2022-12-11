@@ -11,4 +11,10 @@
   height: 30rem;
   justify-content: space-around;
   width: 100%;
+
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+    flex-direction: column;
+    gap: 0;
+    height: 35rem;
+  }
 }

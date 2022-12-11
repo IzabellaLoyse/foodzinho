@@ -30,6 +30,10 @@
 }
 
 .c-content-box__delivery {
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'md')) {
+    margin-bottom: 1.5rem;
+  }
+
   .c-icon--big {
     margin-bottom: map.get(variables.$spacing, '03');
     width: functions.rem(250px);

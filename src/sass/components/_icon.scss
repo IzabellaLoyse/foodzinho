@@ -22,6 +22,11 @@
     height: functions.rem(50px);
     margin-bottom: map.get(variables.$spacing, '03');
     width: functions.rem(50px);
+
+    @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'md')) {
+      height: functions.rem(42px);
+      width: functions.rem(42px);
+    }
   }
 }
 
@@ -35,7 +40,7 @@
   width: functions.rem(50px);
 
   @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
-    height: functions.rem(35px);
-    width: functions.rem(35px);
+    height: functions.rem(26px);
+    width: functions.rem(26px);
   }
 }
