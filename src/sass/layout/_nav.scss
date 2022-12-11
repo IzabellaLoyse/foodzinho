@@ -1,5 +1,6 @@
 @use '../abstract/variables';
 @use '../abstract/functions';
+@use '../abstract/breakpoint';
 @use 'sass:map';
 
 .l-header__nav {
@@ -9,17 +10,21 @@
   margin-right: map.get(variables.$spacing, '06');
   width: 100%;
 
-  @media (max-width: functions.rem(980px)) {
-    justify-content: flex-start;
-  }
+  // @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+  //   justify-content: center;
+  // }
 
-  @media (max-width: functions.rem(780px)) {
-    justify-content: center;
-  }
+  // @media (max-width: functions.rem(980px)) {
+  //   justify-content: flex-start;
+  // }
 
-  @media (max-width: functions.rem(510px)) {
-    justify-content: flex-start;
-    margin-left: functions.rem(50px);
-    width: 50%;
-  }
+  // @media (max-width: functions.rem(780px)) {
+  //   justify-content: center;
+  // }
+
+  // @media (max-width: functions.rem(510px)) {
+  //   justify-content: flex-start;
+  //   margin-left: functions.rem(50px);
+  //   width: 50%;
+  // }
 }

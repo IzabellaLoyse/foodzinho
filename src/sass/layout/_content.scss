@@ -1,12 +1,15 @@
 @use '../abstract/variables';
 @use '../abstract/functions';
+@use '../abstract/breakpoint';
 @use 'sass:map';
 
 .l-content-box {
   flex-direction: column;
 
-  @media (max-width: functions.rem(980px)) {
-    align-items: flex-start;
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__container {
@@ -23,6 +26,10 @@
     justify-content: center;
     margin-top: map.get(variables.$spacing, '09');
     width: 100%;
+
+    @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'md')) {
+      flex-direction: column;
+    }
   }
 
   &__link {

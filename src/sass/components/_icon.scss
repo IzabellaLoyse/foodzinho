@@ -1,5 +1,6 @@
 @use '../abstract/variables';
 @use '../abstract/functions';
+@use '../abstract/breakpoint';
 @use 'sass:map';
 
 .c-header__logo {
@@ -32,4 +33,9 @@
 .c-footer__logo {
   height: functions.rem(50px);
   width: functions.rem(50px);
+
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+    height: functions.rem(35px);
+    width: functions.rem(35px);
+  }
 }

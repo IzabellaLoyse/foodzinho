@@ -1,9 +1,14 @@
 @use '../abstract/variables';
+@use '../abstract/breakpoint';
 @use 'sass:map';
 
 .l-header {
   display: flex;
   width: 100%;
+
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+    width: 80%;
+  }
 
   &__container {
     align-items: center;

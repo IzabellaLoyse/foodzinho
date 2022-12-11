@@ -1,11 +1,12 @@
 @use '../abstract/variables';
 @use '../abstract/functions';
+@use '../abstract/breakpoint';
 @use 'sass:map';
 
 .c-header__nav-list {
   padding-top: map.get(variables.$spacing, '04');
 
-  @media (max-width: functions.rem(780px)) {
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'md')) {
     background-color: map.get(variables.$accessible-colors, 'main-color');
     display: block;
     height: 100vh;
@@ -23,7 +24,7 @@
   display: inline-flex;
   padding-left: map.get(variables.$spacing, '08');
 
-  @media (max-width: functions.rem(780px)) {
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'md')) {
     display: block;
     padding-bottom: map.get(variables.$spacing, '07');
   }
@@ -41,7 +42,7 @@
 
 .l-header__nav.is-header__nav--active {
   .c-header__nav-list {
-    @media (max-width: functions.rem(780px)) {
+    @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'md')) {
       visibility: visible;
     }
   }

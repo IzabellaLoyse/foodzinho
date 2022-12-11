@@ -1,5 +1,6 @@
 @use '../abstract/variables';
 @use '../abstract/functions';
+@use '../abstract/breakpoint';
 @use 'sass:map';
 
 .c-paragraph {
@@ -54,12 +55,20 @@
 .c-paragraph--feedback {
   max-width: functions.rem(448px);
   text-align: left;
+
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+    text-align: center;
+  }
 }
 
 .c-paragraph--footer {
   color: map.get(variables.$accessible-colors, 'secondary-color');
   font-size: map.get(variables.$font-size, 'md');
   font-weight: map.get(variables.$font-weight, 'bold');
+
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+    font-size: map.get(variables.$font-size, 'base');
+  }
 }
 
 // Style for the non-accessible version of the site

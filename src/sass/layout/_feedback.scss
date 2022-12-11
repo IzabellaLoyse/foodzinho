@@ -1,14 +1,25 @@
 @use '../abstract/variables';
 @use '../abstract/functions';
+@use '../abstract/breakpoint';
 @use 'sass:map';
 
 .l-feedback {
   align-items: flex-start;
   justify-content: space-around;
 
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'xl')) {
+    justify-content: center;
+  }
+
   &__content {
     display: flex;
     flex-flow: wrap column;
     margin-left: map.get(variables.$spacing, '09');
+
+    @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'xl')) {
+      align-items: center;
+      justify-content: center;
+      margin-left: 0;
+    }
   }
 }

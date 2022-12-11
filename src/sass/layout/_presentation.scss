@@ -1,5 +1,6 @@
 @use '../abstract/variables';
 @use '../abstract/functions';
+@use '../abstract/breakpoint';
 @use 'sass:map';
 
 .l-presentation,
@@ -16,10 +17,20 @@
   flex-direction: row;
   justify-content: space-around;
 
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'xl')) {
+    justify-content: center;
+  }
+
   &__container {
     display: flex;
     flex-flow: column wrap;
     gap: map.get(variables.$spacing, '06');
+
+    @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'xl')) {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__infos {

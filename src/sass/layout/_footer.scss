@@ -1,5 +1,6 @@
 @use '../abstract/variables';
 @use '../abstract/functions';
+@use '../abstract/breakpoint';
 @use 'sass:map';
 
 .l-footer {
@@ -12,5 +13,9 @@
     flex-direction: row;
     gap: map.get(variables.$spacing, '08');
     justify-content: center;
+
+    @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+      gap: map.get(variables.$spacing, '03');
+    }
   }
 }
