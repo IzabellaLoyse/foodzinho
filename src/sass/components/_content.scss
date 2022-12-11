@@ -1,0 +1,50 @@
+@use '../abstract/variables';
+@use '../abstract/functions';
+@use 'sass:map';
+
+.c-presentation__content {
+  margin-left: map.get(variables.$spacing, '09');
+
+  .c-presentation__image {
+    width: functions.rem(474px);
+
+    @media (max-width: functions.rem(980px)) {
+      display: none;
+    }
+  }
+}
+
+.c-content-box__package,
+.c-content-box__delivery,
+.c-content-box__ready-food,
+.c-feedback__description {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c-content-box__delivery {
+  .c-icon--big {
+    margin-bottom: map.get(variables.$spacing, '03');
+    width: functions.rem(250px);
+  }
+}
+
+.c-content-box__package {
+  transform: translateY(-25px);
+
+  .c-icon--big {
+    margin-bottom: map.get(variables.$spacing, '03');
+    width: functions.rem(200px);
+  }
+}
+
+.c-content-box__ready-food {
+  transform: translateY(-15px);
+
+  .c-icon--big {
+    margin-bottom: map.get(variables.$spacing, '03');
+    width: functions.rem(250px);
+  }
+}

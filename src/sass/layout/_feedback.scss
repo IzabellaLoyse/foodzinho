@@ -1,0 +1,14 @@
+@use '../abstract/variables';
+@use '../abstract/functions';
+@use 'sass:map';
+
+.l-feedback {
+  align-items: flex-start;
+  justify-content: space-around;
+
+  &__content {
+    display: flex;
+    flex-flow: wrap column;
+    margin-left: map.get(variables.$spacing, '09');
+  }
+}

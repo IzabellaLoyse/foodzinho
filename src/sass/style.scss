@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
-@import 'abstract/index';
-@import 'vendor/index';
-@import 'base/index';
-@import 'components/index';
-@import 'layout/index';
-@import 'state/index';
+@use 'abstract/abstract';
+@use 'vendor/vendor';
+@use 'base/base';
+@use 'components/components';
+@use 'layout/layout';
+@use 'state/state';

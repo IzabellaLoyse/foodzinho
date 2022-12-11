@@ -102,7 +102,11 @@
                 lugar.
               </p>
 
-              <a href="#menu" class="c-button c-button--main" role="button">
+              <a
+                href="./menu.html"
+                class="c-button c-button--main"
+                role="button"
+              >
                 Conhecer o Menu
               </a>
 
@@ -227,13 +231,13 @@
             </p>
 
             <div class="l-content-box__link">
-              <!-- <a
+              <a
                 href="./menu.html"
                 class="c-button c-button--main"
                 role="button"
               >
                 Conhecer o Menu
-              </a> -->
+              </a>
             </div>
           </div>
         </section>
@@ -242,7 +246,7 @@
           <div class="l-feedback">
             <div class="c-feedback__box">
               <img
-                src="src/assets/images/hamburguer.svg"
+                src="src/assets/images/hamburguer.png"
                 alt="Foto de um hambúrguer grande de bife com cheddar"
                 title="Hambúrguer grande de bife com cheddar"
                 class="c-feedback__image"
@@ -262,11 +266,11 @@
                   class="c-feedback__character"
                 />
 
-                <div>
-                  <p>
+                <div class="c-feedback__infos">
+                  <p class="c-feedback--info">
                     <strong>Maria Leopoldina</strong>
                   </p>
-                  <p>Foodzinho de Téofilo Otoni</p>
+                  <p class="c-feedback--info">Foodzinho de Téofilo Otoni</p>
                 </div>
               </div>
 
@@ -276,9 +280,11 @@
                 meu gosto. O queijo maltado deixa um sabor único.
               </p>
 
-              <div>
-                <!-- <img src="src/assets/icons/icon-star.svg" alt="" /> -->
-                <p><span>4.9</span> (240 Reviews)</p>
+              <div class="c-feedback__reviews">
+                <div class="js-stars"></div>
+                <p class="c-paragraph--reviews">
+                  <strong>5.0</strong> (240 Reviews)
+                </p>
               </div>
             </section>
           </div>
@@ -302,7 +308,7 @@
               />
             </div>
 
-            <section class="l-container-form">
+            <section class="c-container-form">
               <form class="c-form-page">
                 <h3>Entre em contato</h3>
 
@@ -349,7 +355,7 @@
                 </div>
 
                 <button type="submit" class="c-button c-button--form">
-                  Pedir Agora
+                  Cadastrar
                 </button>
               </form>
             </section>
@@ -363,15 +369,26 @@
           aria-label="Voltar ao topo da página"
         >
           <img
-            src="src/assets/icons/icon-arrow-top.png"
+            src="src/assets/images/icon-arrow-top.png"
             alt="Ícone de uma seta apontando para cima"
             title="Ícone de uma seta para cima"
           />
         </button>
       </main>
 
-      <footer>
-        <p>&copy; 2022 Foodzinho. Todos os direitos reservados.</p>
+      <footer class="l-footer l-container">
+        <div class="l-footer__container">
+          <div class="c-footer__logo">
+            <img
+              src="src/assets/icons/icon-logo-foodzinho.svg"
+              alt="Logo em formato de pedaço de pizza laranja"
+              title="Logo do site"
+            />
+          </div>
+          <p class="c-paragraph--footer">
+            &copy; 2022 Foodzinho. Todos os direitos reservados.
+          </p>
+        </div>
       </footer>
     </section>
 

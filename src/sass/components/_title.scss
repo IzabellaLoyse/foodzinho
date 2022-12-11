@@ -1,27 +1,25 @@
+@use '../abstract/variables';
+@use '../abstract/functions';
 @use 'sass:map';
 
 .c-title {
-  font-weight: map.get($font-weight, 'bold');
-  letter-spacing: $letter-spacing-default;
-}
-
-.c-title--teste {
-  color: #b59c8e;
+  font-weight: map.get(variables.$font-weight, 'bold');
+  letter-spacing: variables.$letter-spacing-default;
 }
 
 .c-title--primary,
 .c-title--medium,
 .c-title--service,
 .c-title--feedback {
-  color: map.get($theme-light, 'primary-color');
-  max-width: rem(600px);
+  color: map.get(variables.$accessible-colors, 'primary-color');
+  max-width: functions.rem(600px);
 }
 
 .c-title--primary {
   &:focus,
   &:visited,
   &:active {
-    border: 1px dashed map.get($theme-light, 'third-color');
+    border: 1px dashed map.get(variables.$accessible-colors, 'third-color');
   }
 }
 
@@ -30,11 +28,20 @@
   text-align: left;
 }
 
+.c-title--feedback {
+  width: functions.rem(500px);
+}
+
 .c-title--service {
   text-align: center;
 }
 
 .c-title-form {
-  color: map.get($theme-light, 'main-color');
+  color: map.get(variables.$accessible-colors, 'main-color');
   text-align: center;
+}
+
+// Titles style for non-accessible version of site
+.c-title--not-accessible {
+  color: map.get(variables.$not-accessible-colors, 'main-color');
 }

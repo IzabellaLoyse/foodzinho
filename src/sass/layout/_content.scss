@@ -1,0 +1,31 @@
+@use '../abstract/variables';
+@use '../abstract/functions';
+@use 'sass:map';
+
+.l-content-box {
+  flex-direction: column;
+
+  @media (max-width: functions.rem(980px)) {
+    align-items: flex-start;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: map.get(variables.$spacing, '07');
+  }
+
+  &__infos {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: map.get(variables.$spacing, '08');
+    justify-content: center;
+    margin-top: map.get(variables.$spacing, '09');
+    width: 100%;
+  }
+
+  &__link {
+    margin-top: map.get(variables.$spacing, '07');
+  }
+}

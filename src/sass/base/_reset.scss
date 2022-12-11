@@ -1,6 +1,7 @@
 /* stylelint-disable no-descending-specificity */
 /* stylelint-disable property-no-vendor-prefix */
-
+@use '../abstract/variables';
+@use '../abstract/functions';
 @use 'sass:map';
 
 html {
@@ -18,8 +19,8 @@ html {
 }
 
 body {
-  background-color: map.get($theme-light, 'main-color');
-  font-family: $global-font-nunito;
+  background-color: map.get(variables.$accessible-colors, 'main-color');
+  font-family: variables.$global-font-nunito;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
@@ -40,24 +41,24 @@ h4 {
 h1,
 h2,
 h3 {
-  font-family: $global-font-poppins;
-  font-weight: map.get($font-weight, 'semi-bold');
+  font-family: variables.$global-font-poppins;
+  font-weight: map.get(variables.$font-weight, 'semi-bold');
 }
 
 h1 {
-  font-size: map.get($font-size, '2xl');
+  font-size: map.get(variables.$font-size, '2xl');
 }
 
 h2 {
-  font-size: map.get($font-size, 'xl');
+  font-size: map.get(variables.$font-size, 'xl');
 }
 
 h3 {
-  font-size: map.get($font-size, 'lg');
+  font-size: map.get(variables.$font-size, 'lg');
 }
 
 li > a {
-  @media (max-width: rem(980px)) {
+  @media (max-width: functions.rem(980px)) {
     display: initial;
   }
 }
@@ -70,11 +71,11 @@ a {
   &:focus,
   &:hover,
   &:visited {
-    border: 1px dashed map.get($theme-light, 'third-color');
+    border: 1px dashed map.get(variables.$accessible-colors, 'third-color');
   }
 
   &:active {
-    color: map.get($theme-light, 'fourth-color');
+    color: map.get(variables.$accessible-colors, 'fourth-color');
   }
 }
 

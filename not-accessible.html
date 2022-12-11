@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F24E1E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <title>Foodzinho sem Acessibilidade</title>
+  </head>
+
+  <body>
+    <div class="l-grid-system">
+      <div class="l-header l-container">
+        <div class="l-header__container">
+          <div class="c-header__logo">
+            <a href="#home">
+              <img
+                src="src/assets/icons/icon-logo-foodzinho.svg"
+                class="c-header__image"
+              />
+            </a>
+          </div>
+
+          <h2>
+            <a href="#home" class="c-title c-title--not-accessible"
+              >Foodzinho</a
+            >
+          </h2>
+        </div>
+
+        <div class="l-header__nav js-navigation">
+          <div class="c-button--hamburger js-button-hamburger">
+            <svg viewBox="0 0 100 80" width="25" height="30">
+              <rect width="100" height="20"></rect>
+              <rect y="30" width="100" height="20"></rect>
+              <rect y="60" width="100" height="20"></rect>
+            </svg>
+          </div>
+
+          <div class="c-header__nav-list">
+            <p class="c-header__nav-item">
+              <a href="#home" class="c-title--not-accessible"> Home </a>
+            </p>
+
+            <p class="c-header__nav-item">
+              <a href="#service" class="c-title--not-accessible"> Serviço </a>
+            </p>
+
+            <p class="c-header__nav-item">
+              <a href="./menu.html" class="c-title--not-accessible"> Menu </a>
+            </p>
+
+            <p class="c-header__nav-item">
+              <a href="#contact" class="c-title--not-accessible"> Contato </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div id="home" class="l-container">
+          <div class="l-presentation">
+            <div class="l-presentation__container">
+              <h2 class="c-title c-title--not-accessible">
+                A melhor comida da região para você, e a entrega mais rápida da
+                cidade.
+              </h2>
+              <p class="c-paragraph c-paragraph--not-accessible">
+                Peça a melhor comida conosco a qualquer hora e em qualquer
+                lugar.
+              </p>
+
+              <a href="./menu.html" class="c-button c-button--not-accessible">
+                Conhecer o Menu
+              </a>
+
+              <divn class="l-presentation__infos">
+                <div class="c-presentation__icons">
+                  <img src="src/assets/icons/icon-medal.svg" class="c-icon" />
+                  <p class="c-paragraph--not-accessible">240k Reviews</p>
+                  <p class="c-paragraph--not-accessible">(4.8)</p>
+                </div>
+
+                <div class="c-presentation__icons">
+                  <img
+                    src="src/assets/icons/icon-restaurant.svg"
+                    class="c-icon"
+                  />
+                  <p class="c-paragraph--not-accessible">
+                    200 <span class="c-budget--info">+</span>
+                  </p>
+                  <p class="c-paragraph--not-accessible">Restaurantes</p>
+                </div>
+
+                <div class="c-presentation__icons">
+                  <img
+                    src="src/assets/icons/icon-hamburger.svg"
+                    class="c-icon"
+                  />
+                  <p class="c-paragraph--not-accessible">
+                    300 <span class="c-budget--info">+</span>
+                  </p>
+                  <p class="c-paragraph--not-accessible">Comidas</p>
+                </div>
+              </divn>
+            </div>
+
+            <div class="c-presentation__content">
+              <img
+                src="src/assets/icons/icon-big-hamburger.svg"
+                class="c-presentation__image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="service" class="l-container">
+          <div class="l-content-box">
+            <div class="l-content-box__container">
+              <h2 class="c-title c-title--not-accessible">
+                Saiba como podemos atendê-lo e entregar sua comida favorita
+              </h2>
+            </div>
+
+            <p class="c-paragraph--not-accessible">
+              Sempre fornecemos o melhor serviço para você e entregamos sua
+              comida favorita no seu destino
+            </p>
+
+            <div class="l-content-box__infos">
+              <div class="c-content-box__delivery">
+                <img
+                  src="src/assets/icons/icon-delivery-woman.svg"
+                  class="c-icon--big"
+                />
+                <h2 class="c-title c-title--not-accessible">
+                  Entregamos sua comida
+                </h2>
+                <p class="c-paragraph c-paragraph--not-accessible">
+                  Escolha sua comida e peça diretamente da sua casa
+                </p>
+              </div>
+
+              <div class="c-content-box__package">
+                <img
+                  src="src/assets/icons/icon-package-delivery.svg"
+                  class="c-icon--big"
+                />
+                <h2 class="c-title c-title--not-accessible">
+                  Empresa de confiança
+                </h2>
+                <p class="c-paragraph c-paragraph--not-accessible">
+                  Seu pedido entregue com o melhor serviço de delivery
+                </p>
+              </div>
+
+              <div class="c-content-box__ready-food">
+                <img
+                  src="src/assets/icons/icon-ready-food.svg"
+                  class="c-icon--big"
+                />
+                <h2 class="c-title c-title--not-accessible">Feito na hora</h2>
+                <p class="c-paragraph c-paragraph--not-accessible">
+                  Sua comida é feita na hora e chegará pronta para servir
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="menu" class="l-container">
+          <div class="l-content-box">
+            <div class="l-content-box__container">
+              <h2 class="c-title c-title--not-accessible">
+                Nosso menu possui variedades de sabores e estilos
+              </h2>
+            </div>
+
+            <p class="c-paragraph--not-accessible">
+              Conheça o nosso cardápio com os mais diversos hambúrgueres, nossas
+              comidas são preparadas com muito amor e estilo
+            </p>
+
+            <div class="l-content-box__link">
+              <a href="./menu.html" class="c-button c-button--not-accessible">
+                Conhecer o Menu
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="l-container">
+          <div class="l-feedback">
+            <div class="c-feedback__box">
+              <img
+                src="src/assets/images/hamburguer.svg"
+                class="c-feedback__image"
+              />
+            </div>
+
+            <div class="l-feedback__content">
+              <h2 class="c-title c-title--not-accessible">
+                O que os nossos clientes dizem sobre as nossas comidas
+              </h2>
+
+              <div class="c-feedback__description">
+                <img
+                  src="src/assets/icons/icon-character.svg"
+                  class="c-feedback__character"
+                />
+
+                <div>
+                  <p class="c-paragraph c-paragraph--not-accessible">
+                    <strong>Maria Leopoldina</strong>
+                  </p>
+                  <p class="c-paragraph c-paragraph--not-accessible">
+                    Foodzinho de Téofilo Otoni
+                  </p>
+                </div>
+              </div>
+
+              <p class="c-paragraph c-paragraph--not-accessible">
+                Os hambúrgueres são realmente deliciosos, a textura da comida é
+                muito crocante. O tomate orgânico é delicioso e de acordo com o
+                meu gosto. O queijo maltado deixa um sabor único.
+              </p>
+
+              <div>
+                <!-- <img src="src/assets/icons/icon-star.svg" alt="" /> -->
+                <p class="c-paragraph c-paragraph--not-accessible">
+                  <span>4.9</span> (240 Reviews)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section id="contact" class="l-container-fluid">
+          <div class="l-form">
+            <div class="c-form__content">
+              <h3 class="c-form__subtitle c-content--not-accessible">
+                Não perca as nossas promoções diárias!
+              </h3>
+              <p class="c-form__description c-content--not-accessible">
+                Pensando em entregar uma boa comida com ótimo preço, a Foodzinho
+                tem promoções diárias pra você!
+              </p>
+              <img
+                src="src/assets/icons/icon-mexican-taco.svg"
+                alt="Imagem de um grande taco mexicano"
+                title="Taco mexicano"
+                class="c-form__image"
+              />
+            </div>
+
+            <section class="l-container-form">
+              <form class="c-form-page">
+                <h3 class="c-content--not-accessible">Entre em contato</h3>
+
+                <div class="c-form-group">
+                  <input
+                    class="c-form-group__input"
+                    type="text"
+                    placeholder="Nome"
+                    required
+                  />
+                </div>
+
+                <div class="c-form-group">
+                  <input
+                    class="c-form-group__input"
+                    type="text"
+                    placeholder="Telefone"
+                    required
+                  />
+                </div>
+
+                <div class="c-form-group">
+                  <input
+                    class="c-form-group__input"
+                    type="email"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <button type="submit" class="c-button c-button--not-accessible">
+                  Pedir Agora
+                </button>
+              </form>
+            </section>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <p>&copy; 2022 Foodzinho. Todos os direitos reservados.</p>
+      </div>
+    </div>
+
+    <script src="node_modules/@khanacademy/tota11y/dist/tota11y.min.js"></script>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>

@@ -11,6 +11,8 @@ O Foodzinho utiliza o **[total11y](https://khan.github.io/tota11y/)** e o **[web
 dependências, no qual ajuda a visualizar o desempenho do site com tecnologias
 assistivas.
 
+## Versões do Foodzinho
+
 # 💡 Guia de instalação
 
 ## 🔮 Instalação das Dependências

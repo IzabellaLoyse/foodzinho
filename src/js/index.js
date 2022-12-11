@@ -27,6 +27,20 @@ const handleBackToTop = () => {
   });
 };
 
+const createStars = () => {
+  const containerStars = document.querySelector('.js-stars');
+
+  for (let i = 0; i < 5; i += 1) {
+    containerStars.insertAdjacentHTML(
+      'beforeend',
+      `<img src="src/assets/icons/icon-star.svg" alt="Ícone de uma estrela amarela" class="c-star__icon" />
+      `,
+    );
+  }
+};
+
+createStars();
+
 const buttonHamburger = document.querySelector('.js-button-hamburger');
 
 const toggleMenuHamburger = () => {

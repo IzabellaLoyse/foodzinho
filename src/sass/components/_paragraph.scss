@@ -1,53 +1,69 @@
+@use '../abstract/variables';
+@use '../abstract/functions';
 @use 'sass:map';
 
 .c-paragraph {
-  font-weight: map.get($font-weight, 'regular');
-}
-
-.c-paragraph--teste {
-  color: #c3843a;
+  font-weight: map.get(variables.$font-weight, 'regular');
 }
 
 .c-paragraph--main,
 .c-paragraph--service,
 .c-paragraph--feedback {
-  color: map.get($theme-light, 'secondary-color');
-  font-size: map.get($font-size, 'md');
+  color: map.get(variables.$accessible-colors, 'secondary-color');
+  font-size: map.get(variables.$font-size, 'md');
+}
+
+.c-feedback--info,
+.c-paragraph--reviews {
+  font-family: variables.$global-font-poppins;
+  font-size: map.get(variables.$font-size, 'base');
 }
 
 .c-paragraph--main {
-  max-width: rem(340px);
+  max-width: functions.rem(340px);
   text-align: left;
 }
 
 .c-paragraph--service {
-  max-width: rem(550px);
+  max-width: functions.rem(550px);
   text-align: center;
 }
 
 .c-paragraph--form {
-  color: map.get($theme-light, 'main-color');
+  color: map.get(variables.$accessible-colors, 'main-color');
 }
 
 .c-paragraph--info {
-  color: map.get($theme-light, 'primary-color');
-  font-size: rem(14px);
-  font-weight: map.get($font-weight, 'extra-bold');
+  color: map.get(variables.$accessible-colors, 'primary-color');
+  font-size: functions.rem(14px);
+  font-weight: map.get(variables.$font-weight, 'extra-bold');
   letter-spacing: 2px;
   text-align: center;
 }
 
 .c-budget--info {
-  color: map.get($theme-light, 'third-color');
+  color: map.get(variables.$accessible-colors, 'third-color');
 }
 
 .c-paragraph--delivery {
-  color: map.get($theme-light, 'secondary-color');
-  font-size: map.get($font-size, 'base');
+  color: map.get(variables.$accessible-colors, 'secondary-color');
+  font-size: map.get(variables.$font-size, 'base');
   text-align: center;
 }
 
 .c-paragraph--feedback {
-  max-width: rem(448px);
+  max-width: functions.rem(448px);
   text-align: left;
+}
+
+.c-paragraph--footer {
+  color: map.get(variables.$accessible-colors, 'secondary-color');
+  font-size: map.get(variables.$font-size, 'md');
+  font-weight: map.get(variables.$font-weight, 'bold');
+}
+
+// Style for the non-accessible version of the site
+.c-paragraph--not-accessible,
+.c-content--not-accessible {
+  color: map.get(variables.$not-accessible-colors, 'primary-color');
 }

@@ -1,95 +1,95 @@
+@use '../abstract/variables';
+@use '../abstract/functions';
 @use 'sass:map';
 
 .c-button {
-  border-radius: $global-border-radius;
+  border-radius: variables.$global-border-radius;
   border-style: none;
   cursor: pointer;
-  font-size: map.get($font-size, 'base');
-  font-weight: map.get($font-weight, 'black');
-  height: rem(48px);
-  padding: map.get($spacing, '02');
+  font-size: map.get(variables.$font-size, 'base');
+  font-weight: map.get(variables.$font-weight, 'black');
+  height: functions.rem(48px);
+  padding: map.get(variables.$spacing, '02');
   text-align: center;
-  transition: $transition-duration-default $transition-function-ease-in;
-  width: rem(216px);
-}
-
-.c-button--teste {
-  align-items: center;
-  background-color: rgb(255 136 0);
-  color: rgb(255 255 255);
-  display: inline-flex;
-  justify-content: center;
+  transition: variables.$transition-duration-default
+    variables.$transition-function-ease-in;
+  width: functions.rem(216px);
 }
 
 .c-button--main {
   align-items: center;
-  background-color: map.get($theme-light, 'primary-color');
-  color: map.get($theme-light, 'main-color');
+  background-color: map.get(variables.$accessible-colors, 'primary-color');
+  color: map.get(variables.$accessible-colors, 'main-color');
   display: inline-flex;
   justify-content: center;
 
   &:hover,
   &:focus {
-    background-color: map.get($theme-light, 'fourth-color');
-    border: 1px dashed map.get($theme-light, 'primary-color');
-    color: map.get($theme-light, 'primary-color');
+    background-color: map.get(variables.$accessible-colors, 'fourth-color');
+    border: 1px dashed map.get(variables.$accessible-colors, 'primary-color');
+    color: map.get(variables.$accessible-colors, 'primary-color');
   }
 }
 
 .c-button--form {
-  background-color: map.get($theme-light, 'main-color');
-  color: map.get($theme-light, 'primary-color');
-  margin-top: 2rem;
+  background-color: map.get(variables.$accessible-colors, 'main-color');
+  color: map.get(variables.$accessible-colors, 'primary-color');
+  margin-top: 1rem;
 
   &:focus,
   &:active {
-    background-color: map.get($theme-light, 'focus-color');
-    border: 2px dashed map.get($theme-light, 'primary-color');
-    color: map.get($theme-light, 'primary-color');
+    background-color: map.get(variables.$accessible-colors, 'focus-color');
+    border: 2px dashed map.get(variables.$accessible-colors, 'primary-color');
+    color: map.get(variables.$accessible-colors, 'primary-color');
   }
 
   &:hover {
-    border: 2px dashed map.get($theme-light, 'primary-color');
+    border: 2px dashed map.get(variables.$accessible-colors, 'primary-color');
   }
 }
 
 .c-button--hamburger {
   visibility: hidden;
 
-  @media (max-width: rem(780px)) {
+  @media (max-width: functions.rem(780px)) {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    margin-top: map.get($spacing, '07');
-    transition: $transition-duration-default $transition-function-ease-in;
+    margin-top: map.get(variables.$spacing, '07');
+    transition: variables.$transition-duration-default
+      variables.$transition-function-ease-in;
     visibility: visible;
 
     &:hover {
-      border: 2px dashed map.get($theme-light, 'primary-color');
+      border: 2px dashed map.get(variables.$accessible-colors, 'primary-color');
     }
   }
 }
 
-.c-teste {
-  background-color: rgb(255 136 0);
-  color: #8f2121;
-}
-
 .c-button--back-to-top {
   align-items: center;
-  background-color: map.get($theme-light, 'fourth-color');
+  background-color: map.get(variables.$accessible-colors, 'fourth-color');
   border: 0;
   border-radius: 50%;
   bottom: 50px;
   display: flex;
-  height: rem(30px);
+  height: functions.rem(30px);
   justify-content: center;
   position: fixed;
   right: 50px;
-  transition: $transition-duration-default;
-  width: rem(30px);
+  transition: variables.$transition-duration-default;
+  width: functions.rem(30px);
 
   &:hover {
-    border: 1px dashed map.get($theme-light, 'primary-color');
+    border: 1px dashed map.get(variables.$accessible-colors, 'primary-color');
   }
+}
+
+// Buttons style for non-accessible version of website
+.c-button-not-accessible {
+  align-items: center;
+  background-color: map.get(variables.$not-accessible-colors, 'third-color');
+  color: map.get(variables.$not-accessible-colors, 'secondary-color');
+  display: inline-flex;
+  justify-content: center;
 }

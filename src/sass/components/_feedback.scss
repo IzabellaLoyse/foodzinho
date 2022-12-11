@@ -1,0 +1,37 @@
+@use '../abstract/variables';
+@use '../abstract/functions';
+@use 'sass:map';
+
+.c-feedback__box {
+  .c-feedback__image {
+    border-radius: 50%;
+    height: functions.rem(400px);
+    width: functions.rem(490px);
+  }
+}
+
+.c-feedback__description {
+  flex-direction: row;
+  gap: map.get(variables.$spacing, '05');
+  justify-content: flex-start;
+  margin-bottom: map.get(variables.$spacing, '07');
+  margin-top: map.get(variables.$spacing, '07');
+
+  .c-feedback__character {
+    height: functions.rem(48px);
+    width: functions.rem(48px);
+  }
+}
+
+.c-feedback__reviews {
+  align-items: flex-start;
+  display: flex;
+  gap: map.get(variables.$spacing, '04');
+  justify-content: flex-start;
+  margin-top: map.get(variables.$spacing, '05');
+
+  .c-star__icon {
+    height: functions.rem(20px);
+    width: functions.rem(20px);
+  }
+}

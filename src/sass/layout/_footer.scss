@@ -1,1 +1,16 @@
-// Create footer
+@use '../abstract/variables';
+@use '../abstract/functions';
+@use 'sass:map';
+
+.l-footer {
+  padding-bottom: map.get(variables.$spacing, '07');
+  padding-top: map.get(variables.$spacing, '08');
+
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: map.get(variables.$spacing, '08');
+    justify-content: center;
+  }
+}

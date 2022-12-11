@@ -1,0 +1,13 @@
+@use '../abstract/variables';
+@use 'sass:map';
+
+.l-form {
+  align-items: center;
+  background-color: map.get(variables.$accessible-colors, 'primary-color');
+  color: map.get(variables.$accessible-colors, 'main-color');
+  display: flex;
+  gap: 8rem;
+  height: 30rem;
+  justify-content: space-around;
+  width: 100%;
+}

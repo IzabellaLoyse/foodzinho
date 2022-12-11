@@ -1,42 +1,68 @@
+@use '../abstract/variables';
+@use '../abstract/functions';
 @use 'sass:map';
 
 .c-form__subtitle {
-  padding-bottom: map.get($spacing, '06');
+  margin-top: 5.5rem;
+  padding-bottom: map.get(variables.$spacing, '06');
 }
 
 .c-form__description {
-  font-weight: map.get($font-weight, 'regular');
-  width: rem(450px);
+  font-size: 1.1rem;
+  font-weight: map.get(variables.$font-weight, 'regular');
+  width: functions.rem(450px);
+}
+
+.c-container-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: map.get(variables.$spacing, '06');
 }
 
 .c-form-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: scaleY(1);
+
   h3 {
-    padding-bottom: map.get($spacing, '06');
+    padding-bottom: map.get(variables.$spacing, '06');
+    text-align: center;
   }
 }
 
-.c-form-teste {
-  color: #c3843a;
+.c-form__content {
+  align-items: center;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+
+  .c-form__image {
+    width: functions.rem(370px);
+  }
 }
 
 .c-form-group {
   display: flex;
   flex-direction: column;
-  gap: map.get($spacing, '05');
-  margin-bottom: map.get($spacing, '05');
+  gap: map.get(variables.$spacing, '03');
+  margin-bottom: map.get(variables.$spacing, '04');
   width: 100%;
 
   &__label {
-    font-size: rem(16px);
-    font-weight: map.get($font-weight, 'bold');
+    font-size: functions.rem(16px);
+    font-weight: map.get(variables.$font-weight, 'bold');
   }
 
   &__input {
-    border-radius: rem(8px);
-    font-size: rem(18px);
-    height: rem(40px);
+    border-radius: 5px;
+    font-size: functions.rem(18px);
+    height: functions.rem(40px);
     max-width: 100%;
-    padding: map.get($spacing, '03');
-    width: rem(300px);
+    padding: map.get(variables.$spacing, '02');
+    width: functions.rem(352px);
   }
 }

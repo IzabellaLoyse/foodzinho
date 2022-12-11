@@ -1,3 +1,5 @@
+@use '../abstract/variables';
+@use '../abstract/functions';
 @use 'sass:map';
 
 .l-presentation,
@@ -5,8 +7,8 @@
 .l-feedback {
   align-items: center;
   display: flex;
-  margin-bottom: map.get($spacing, '09');
-  margin-top: map.get($spacing, '08');
+  margin-bottom: map.get(variables.$spacing, '09');
+  margin-top: map.get(variables.$spacing, '08');
   width: 100%;
 }
 
@@ -17,70 +19,16 @@
   &__container {
     display: flex;
     flex-flow: column wrap;
-    gap: map.get($spacing, '06');
+    gap: map.get(variables.$spacing, '06');
   }
 
   &__infos {
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: map.get($spacing, '08');
+    gap: map.get(variables.$spacing, '08');
     justify-content: flex-start;
-    margin-top: map.get($spacing, '06');
-    width: 100%;
+    margin-top: map.get(variables.$spacing, '05');
+    width: 70%;
   }
-}
-
-.l-content-box {
-  flex-direction: column;
-
-  @media (max-width: rem(980px)) {
-    align-items: flex-start;
-  }
-
-  &__container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: map.get($spacing, '07');
-  }
-
-  &__infos {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: map.get($spacing, '08');
-    justify-content: center;
-    margin-top: map.get($spacing, '09');
-    width: 100%;
-  }
-
-  &__link {
-    margin-top: map.get($spacing, '07');
-  }
-}
-
-.l-feedback {
-  align-items: flex-start;
-
-  &__content {
-    display: flex;
-    flex-flow: wrap column;
-    margin-left: map.get($spacing, '09');
-  }
-}
-
-.l-form {
-  align-items: flex-start;
-  background-color: map.get($theme-light, 'primary-color');
-  color: map.get($theme-light, 'main-color');
-  display: flex;
-  justify-content: space-around;
-}
-
-.l-container-form {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: map.get($spacing, '06');
 }

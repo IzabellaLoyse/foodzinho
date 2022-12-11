@@ -1,3 +1,4 @@
+@use '../abstract/variables';
 @use 'sass:map';
 
 .l-header {
@@ -7,6 +8,6 @@
   &__container {
     align-items: center;
     display: flex;
-    margin-top: map.get($spacing, '07');
+    margin-top: map.get(variables.$spacing, '07');
   }
 }

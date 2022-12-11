@@ -2,13 +2,21 @@
     * * Colors
    =================================================== */
 
-$theme-light: (
+$accessible-colors: (
   'main-color': #fff,
   'primary-color': #000,
   'secondary-color': #252527,
   'third-color': #a22e0b,
   'fourth-color': #f24e1e,
   'focus-color': #818183,
+);
+
+$not-accessible-colors: (
+  'main-color': #b59c8e,
+  'primary-color': #c3843a,
+  'secondary-color': #fff,
+  'third-color': #f80,
+  'fourth-color': #8f2121,
 );
 
 /* ===================================================

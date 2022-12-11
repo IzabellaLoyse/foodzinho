@@ -1,23 +1,25 @@
+@use '../abstract/variables';
+@use '../abstract/functions';
 @use 'sass:map';
 
 .l-header__nav {
   align-items: center;
   display: flex;
   justify-content: flex-end;
-  margin-right: map.get($spacing, '06');
+  margin-right: map.get(variables.$spacing, '06');
   width: 100%;
 
-  @media (max-width: rem(980px)) {
+  @media (max-width: functions.rem(980px)) {
     justify-content: flex-start;
   }
 
-  @media (max-width: rem(780px)) {
+  @media (max-width: functions.rem(780px)) {
     justify-content: center;
   }
 
-  @media (max-width: rem(510px)) {
+  @media (max-width: functions.rem(510px)) {
     justify-content: flex-start;
-    margin-left: rem(50px);
+    margin-left: functions.rem(50px);
     width: 50%;
   }
 }

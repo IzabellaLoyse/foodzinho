@@ -1,16 +1,18 @@
+@use '../abstract/variables';
+@use '../abstract/functions';
 @use 'sass:map';
 
 .c-header__nav-list {
-  padding-top: map.get($spacing, '04');
+  padding-top: map.get(variables.$spacing, '04');
 
-  @media (max-width: rem(780px)) {
-    background-color: map.get($theme-light, 'main-color');
+  @media (max-width: functions.rem(780px)) {
+    background-color: map.get(variables.$accessible-colors, 'main-color');
     display: block;
     height: 100vh;
     position: absolute;
     right: 0;
     top: 0;
-    transition: $transition-duration-default;
+    transition: variables.$transition-duration-default;
     visibility: hidden;
     width: 100vw;
     z-index: 1000;
@@ -19,26 +21,27 @@
 
 .c-header__nav-item {
   display: inline-flex;
-  padding-left: map.get($spacing, '08');
+  padding-left: map.get(variables.$spacing, '08');
 
-  @media (max-width: rem(780px)) {
+  @media (max-width: functions.rem(780px)) {
     display: block;
-    padding-bottom: map.get($spacing, '07');
+    padding-bottom: map.get(variables.$spacing, '07');
   }
 }
 
 .c-header__nav-link {
-  color: map.get($theme-light, 'primary-color');
-  font-size: map.get($font-size, 'md');
-  font-weight: map.get($font-weight, 'bold');
-  transition: $transition-duration-exit $transition-function-ease-in;
+  color: map.get(variables.$accessible-colors, 'primary-color');
+  font-size: map.get(variables.$font-size, 'md');
+  font-weight: map.get(variables.$font-weight, 'bold');
+  transition: variables.$transition-duration-exit
+    variables.$transition-function-ease-in;
 }
 
 // Menu Hamburger
 
 .l-header__nav.is-header__nav--active {
   .c-header__nav-list {
-    @media (max-width: rem(780px)) {
+    @media (max-width: functions.rem(780px)) {
       visibility: visible;
     }
   }
