@@ -16,7 +16,7 @@
   max-width: functions.rem(600px);
 
   @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'md')) {
-    max-width: functions.rem(400px);
+    max-width: functions.rem(375px);
   }
 }
 
