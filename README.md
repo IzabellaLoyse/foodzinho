@@ -2,7 +2,7 @@
 
 ## 📚 Sobre o Projeto
 
-O **Foodzinho** trata-se de um Site de Delivery que foi desenvolvido para o
+O **Foodzinho** trata-se de um projeto que foi desenvolvido seguindo os critérios de acessibilidade para o
 Trabalho de Conclusão de Curso dos alunos Izabella Loyse Pereira Cândido
 e Matheus Barbosa Ribeiro da Faculdade Presidente Antônio Carlos de Téofilo Otoni
 (UNIPAC).
@@ -12,6 +12,43 @@ dependências, no qual ajuda a visualizar o desempenho do site com tecnologias
 assistivas.
 
 # 💡 Guia de instalação
+
+## 📌 Pré-requesitos
+
+Antes de começar, você precisará ter instalado em sua máquina as seguintes ferramentas:
+
+- [Git](https://git-scm.com)
+- [Node.js](https://nodejs.org/en/) ou [Yarn](https://yarnpkg.com/)
+
+## ⚙️ Instalação
+
+Clone o projeto e acesse a sua pasta
+
+```
+# Clone o repositório
+$ git clone <projeto>
+
+# Acesse a pasta do projeto no terminal
+$ cd pasta
+```
+
+Verifique se a instalação do Node.js foi executada corretamente:
+
+```
+# Verifica a versão atual do Node.js instalada
+$ node -v
+
+# Verifica a versão atual do NPM instalada
+$ npm -v
+```
+
+Verifique se a instalação do Yarn foi executada corretamente:
+
+```
+# Verifica a versão atual do Yarn instalada
+$ yarn -v
+
+```
 
 ## 🔮 Instalação das Dependências
 
@@ -65,3 +102,8 @@ yarn commit
 - HTML5
 - SCSS
 - JavaScript
+
+## 👩🏻‍💻🧑🏻‍💻 Desenvolvedores
+
+- [Izabella Loyse](https://github.com/IzabellaLoyse)
+- [Matheus Ribeiro](https://github.com/matheusbribeiro-dev)
