@@ -24,12 +24,23 @@
 .c-form__subtitle {
   margin-top: 6rem;
   padding-bottom: map.get(variables.$spacing, '06');
+
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'md')) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
 }
 
 .c-form__description {
   font-size: 1.1rem;
   font-weight: map.get(variables.$font-weight, 'regular');
-  width: functions.rem(450px);
+  max-width: functions.rem(450px);
+
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'md')) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
   @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
     text-align: center;
@@ -49,7 +60,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(-40px);
+  transform: translateY(-10px);
+
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'lg')) {
+    transform: translateY(-40px);
+  }
 
   h3 {
     padding-bottom: map.get(variables.$spacing, '06');
