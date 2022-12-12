@@ -3,17 +3,26 @@
 @use '../abstract/breakpoint';
 @use 'sass:map';
 
+.c-header__nav {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: map.get(variables.$spacing, '06');
+  width: 100%;
+}
+
 .c-header__nav-list {
   padding-top: map.get(variables.$spacing, '04');
 
   @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'md')) {
     background-color: map.get(variables.$accessible-colors, 'main-color');
     display: block;
-    height: 100vh;
+    height: 32vh;
+    overflow-y: hidden;
     position: absolute;
     right: 0;
-    top: 0;
-    transition: variables.$transition-duration-default;
+    top: 84px;
+    transition: variables.$transition-duration-menu;
     visibility: hidden;
     width: 100vw;
     z-index: 1000;
@@ -36,14 +45,51 @@
   font-weight: map.get(variables.$font-weight, 'bold');
   transition: variables.$transition-duration-exit
     variables.$transition-function-ease-in;
+
+  @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'md')) {
+    font-size: map.get(variables.$font-size, 'lg');
+  }
 }
 
 // Menu Hamburger
 
-.l-header__nav.is-header__nav--active {
+.c-hamburger {
+  border-top: 4px solid map.get(variables.$accessible-colors, 'primary-color');
+  height: functions.rem(4px);
+  width: functions.rem(25px);
+
+  &::before,
+  &::after {
+    background-color: currentcolor;
+    content: '';
+    display: block;
+    height: functions.rem(4px);
+    margin-top: map.get(variables.$spacing, '02');
+    position: relative;
+    transition: variables.$transition-duration-default;
+    width: functions.rem(25px);
+  }
+}
+
+.c-header__nav.is-header__nav--active {
   .c-header__nav-list {
     @include breakpoint.breakpoint-up(map.get(breakpoint.$breakpoints, 'md')) {
       visibility: visible;
+    }
+  }
+
+  .c-hamburger {
+    border-top-color: transparent;
+
+    &::before {
+      transform: rotate(135deg);
+      transform-origin: center;
+    }
+
+    &::after {
+      top: -10px;
+      transform: rotate(-135deg);
+      transform-origin: center;
     }
   }
 }

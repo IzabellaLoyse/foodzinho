@@ -68,30 +68,20 @@
           </h1>
         </div>
 
-        <nav aria-label="Menu de navegação" class="l-header__nav js-navigation">
+        <nav aria-label="Menu de navegação" class="c-header__nav js-navigation">
           <button
             type="button"
             title="Menu de navegação"
-            aria-label="Menu de navegação"
+            aria-label="Abrir menu"
             aria-haspopup="true"
             aria-controls="menu"
             aria-expanded="false"
             class="c-button--hamburger js-button-hamburger"
           >
-            <svg
-              viewBox="0 0 100 80"
-              width="25"
-              height="30"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <rect width="100" height="20"></rect>
-              <rect y="30" width="100" height="20"></rect>
-              <rect y="60" width="100" height="20"></rect>
-            </svg>
+            <div class="c-hamburger"></div>
           </button>
 
-          <ul class="c-header__nav-list" role="menu">
+          <ul id="menu" class="c-header__nav-list" role="menu">
             <li class="c-header__nav-item" role="menuitem">
               <a
                 href="#home"

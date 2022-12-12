@@ -43,13 +43,26 @@ createStars();
 
 const buttonHamburger = document.querySelector('.js-button-hamburger');
 
-const toggleMenuHamburger = () => {
+const toggleMenuHamburger = (event) => {
   const navigation = document.querySelector('.js-navigation');
+  const navigationActive = navigation.classList.contains(
+    'is-header__nav--active',
+  );
+
+  if (event.type === 'touchstart') event.preventDefault();
 
   navigation.classList.toggle('is-header__nav--active');
+  event.currentTarget.setAttribute('aria-expanded', navigationActive);
+
+  if (navigationActive) {
+    event.currentTarget.setAttribute('aria-label', 'Abrir menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Fechar menu');
+  }
 };
 
 buttonHamburger.addEventListener('click', toggleMenuHamburger);
+buttonHamburger.addEventListener('touchstart', toggleMenuHamburger);
 
 handleClickItemSelected();
 handleBackToTop();
