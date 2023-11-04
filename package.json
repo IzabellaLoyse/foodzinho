@@ -31,7 +31,7 @@
     "hint": "^2.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.8",
-    "postcss": "^8.4.12",
+    "postcss": "^8.4.31",
     "prettier": "^2.6.2",
     "stylelint": "^15.10.1",
     "stylelint-config-prettier": "^9.0.3",
